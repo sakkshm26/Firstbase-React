@@ -1,0 +1,337 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    
+}
+
+body{
+    background-color: black;
+}
+.third .logo{
+    margin-bottom: 20px;
+    
+}
+.third .logo img{
+   
+   height: 100%;
+   width: 100px;
+   display:block;
+   margin:auto;
+   
+   
+
+}
+.third .container{
+width: 55%;
+height: 55%;
+padding: 33px;
+background-color: #121212;
+border: 1px solid #1c1c1e;
+border-radius: 8px;
+position: relative;
+justify-content: center;
+margin: 0 auto;
+font-family: 'Poppins', sans-serif;
+line-height: 18px;
+
+
+
+}
+.third .company_type{
+    color: grey;
+    font-size: 12px;
+}
+.third .first_left{
+    display: flex;
+}
+.third .compmay_result{
+    color: white;
+    font-size: 13px;
+    padding-left: 2px;
+
+}
+.third .percentage{
+    color: grey;
+    font-size: 12px;
+    
+    
+    
+    
+}
+.third .percentage p{
+    text-align: right;
+    margin-top: -3%;
+
+}
+.third .company_heading h2{
+    color: white;
+    font-size: 22px;
+    text-align: center;
+    margin-top: 24px;
+    letter-spacing:.34px;
+}
+.third .compnay_subheading h3{
+    margin-top: 9px;
+
+    font-size: 13px;
+    color: white;
+    text-align: center;
+    font-weight: 300;
+    color: grey;
+
+}
+.third #none{
+    
+    color: grey;
+}
+
+.third #lock{
+    margin-top: 12px;
+     color: #989899;
+    font-size: 11px;
+    font-weight: 600;
+}
+ .third img{
+    margin-right: 2px;
+    color: white;
+    height: 12px;
+    width: 12px;
+}
+
+
+.third .first_main{
+    display: flex;
+    flex-direction: c;
+    margin-left: -10px;
+
+
+
+}
+.third .select{
+    width: 50%;
+    position: fixed;
+}
+.third .second_main{
+    display: flex;
+    margin-left: -20px;
+    padding: 10px;
+}
+.third .padding{
+    padding: 20px;
+}
+.third #star{
+    color: red;
+}
+.third #optional{
+    color: grey;
+    font-size: 10px;
+}
+.third .first_name{
+    color: white;
+    padding: 10px;
+}
+.third .first_name h5{
+    margin-bottom:  15px;
+    
+    font-size: 15px;
+    font-weight: 400;
+}
+.third .first_name p{
+    margin-bottom:  15px;
+    
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.third .all_input{
+        /* width: 100%; */
+        padding: 8px 50px 8px 5px;
+        border-radius: 8px;
+        border: none;
+        background-color: #302e2e;
+        color: white;
+        width: 100%;
+        
+}
+
+
+.third option{
+    font-size: 6px;
+}
+.third select{
+    font-size:12px;
+}
+
+.third .middle_para{
+    font-size: 10px;
+    color: grey;
+    left: 0;
+}
+.third .owner{
+    margin-top: 20px;
+    margin-bottom: 10px;
+    color: white;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+
+
+.third .buttons{
+    display: space-around;
+    
+
+}
+.third .buttons_two{
+    display: space-around;
+    
+    
+
+}
+.third .next_button{
+   
+    text-align: right;
+    margin-top: -5%;
+}
+.third .next_button button{
+    
+    padding: 11px 32px;
+    background-color: #f53f00;
+    border: 2px solid black;
+    border-radius: 12px;
+    color: white;
+   
+
+}
+
+.third .back_button a{
+    color: rgb(73, 71, 71);
+    line-height: 20px;
+    overflow: auto; 
+    text-decoration: none;
+
+
+    
+}
+.third .back_button{
+    margin-top: 15%;
+
+}
+.third .back_button a:hover{
+    color: white;
+}
+
+.third .next_button button:hover{
+    background-color: #8d3011;
+    transition:  1s;
+    cursor: pointer;
+
+
+
+}
+@media only screen and (max-width: 1024px){
+    .third .first_main{
+        display: block;
+    }
+    .third .second_main{
+        display: block;
+    }
+}  
+
+
+@media only screen and (max-width: 768px){
+    .third .container{
+        width: auto;
+        height: auto;
+        
+    }
+    .third .logo{
+        margin: 20px;
+    }
+   
+    
+    .third .container .company_heading h2{
+        
+        text-align: left;
+        
+    }
+    .third .container .compnay_subheading h3{
+        margin-bottom: 20px;
+       
+        text-align: left;
+
+    }
+    .third .company_type{
+        margin-bottom: 25px;
+    }
+    .third .flex{
+        display: flex;
+    }
+    .third .percentage p{
+        margin-left: 95%;
+        margin-top: -40px;
+    }
+    .third .buttons{
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        padding: 36px;
+        background-color: #121212;
+        z-index: 3;
+
+    }
+    .third .buttons_two{
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        padding: 36px;
+        background-color: #121212;
+        z-index: 3;
+        line-height: 20px;
+        
+    }
+    .third .next_button{
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+       
+    }
+    .third .next_button button{
+        padding: 20px 40px 20px 40px;
+      
+    }
+    .third .company_heading h2{
+        font-size: 19px;
+
+    }
+    .third .back_button a{
+        padding: 21px 40px 18px 20px;
+        background-color: #2a2a2c;
+        border-radius: 8px;
+        color: white;
+    
+    }
+    .third .first_main{
+        display: block;
+    }
+    .third .second_main{
+        display: block;
+    }
+    .third .main{
+        padding: 20px;
+background-color: #121212;
+color: inherit;
+border: 1px solid #1c1c1e;
+border-radius: 8px;
+    }
+    .third .base{
+        margin-bottom: 20%;
+    }
+    
+    
+}
