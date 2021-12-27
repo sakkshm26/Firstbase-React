@@ -1,10 +1,47 @@
-import React from 'react';
+import React, {useState, useEffect} from 'react';
 import './third.css';
 import logo from '../../assets/firstbase.png';
 import lock from '../../assets/lock.png';
 import { NavLink } from 'react-router-dom';
 
 function Third() {
+
+    const getValues = () => {
+        const storedValues = localStorage.getItem('form');
+        if (storedValues) {
+            return JSON.parse(storedValues);
+        }
+        return {
+            first: '',
+            middle: '',
+            last: '',
+            country: '',
+            email: '',
+            phone: ''
+        }
+    }
+
+    const [values, setValues] = useState(getValues)
+
+    useEffect(() => {
+        localStorage.setItem('form', JSON.stringify(values));
+    }, [values])
+
+    const handleChange = e => {
+        setValues(prevValues => ({
+            ...prevValues, [e.target.name]: e.target.value,       
+        }));
+        // console.log(values)
+    }
+
+    const handleSubmit = () => {
+        localStorage.setItem('form', JSON.stringify(values))
+    }
+
+    /* const handleSubmit = e => {
+        e.preventDefault();
+    }
+ */
     return (
         <div className='third'>
             <div class="logo">
@@ -35,20 +72,20 @@ function Third() {
 
                 <div class="main">
                     <p id="lock"> <img id="lock_img" src={lock} alt="" /> We protect your personal information. Learn more about our <a id="none" href="">privacy policy. </a> </p>
-                    <form id="form" action="/" />
+                    <form id="form" action="/" onSubmit={handleSubmit} />
                     <div class="first_main">
                         <div class="first_name">
                             <h5>First Name<span id="star">*</span></h5>
-                            <input id="firstname" name="firstname" class="all_input" type="text" />
+                            <input id="firstname" name="first" value={values.first} class="all_input" type="text" onChange={(e) => handleChange(e)} />
                         </div>
                         <div class="first_name">
                             <h5>Middle Name<span id="optional">(Optional)</span></h5>
-                            <input class="all_input" type="text" />
+                            <input class="all_input" type="text" name='middle' value={values.middle} onChange={(e) => handleChange(e)} />
 
                         </div>
                         <div class="first_name">
                             <h5>Last Name<span id="star">*</span></h5>
-                            <input class="all_input" type="text" />
+                            <input class="all_input" type="text" name='last' value={values.last} onChange={(e) => handleChange(e)} />
                         </div>
 
                     </div>
@@ -58,7 +95,9 @@ function Third() {
                     <div class="second_main">
                         <div class="first_name">
                             <p>Country of Residency<span id="star">*</span></p>
-                            <select class="all_input">
+                            <div class="select_main">
+                    <select class="all_input select_main" name='country' value={values.country} onChange={(e) => handleChange(e)}>
+                        
                                 <option value="Afghanistan">Afghanistan</option>
                                 <option value="Albania">Albania</option>
                                 <option value="Algeria">Algeria</option>
@@ -298,17 +337,18 @@ function Third() {
                                 <option value="Serbia">Serbia</option>
                                 <option value="Zambia">Zambia</option>
                                 <option value="Zimbabwe">Zimbabwe</option>
+                                
                             </select>
-
+                        </div>
                         </div>
                         <div class="first_name" data-error="This field is required">
                             <p>Email<span id="star">*</span></p>
-                            <input class="all_input icon" type="email" />
+                            <input class="all_input icon" name='email' type="email" onChange={(e) => handleChange(e)} value={values.email} />
                         </div>
 
                         <div class="first_name">
                             <p>Phone Number<span id="star">*</span></p>
-                            <input class="all_input icon2" type="text" />
+                            <input class="all_input icon2" name='phone' type="text" onChange={(e) => handleChange(e)} value={values.phone} />
                         </div>
 
                     </div>
@@ -319,11 +359,11 @@ function Third() {
 
                 <div class="buttons_two">
                     <div class="back_button">
-                        <NavLink to='/second'><a href="#">&larr;Back</a></NavLink>
+                        <NavLink to='/second' onClick={() => handleSubmit()}><a href="#">&larr;Back</a></NavLink>
 
                     </div>
                     <div class="next_button">
-                        <NavLink to='/fourth'><button>Next</button></NavLink>
+                        <NavLink to='/fourth' onClick={() => handleSubmit()}><button>Next</button></NavLink>
                     </div>
                 </div>
 

@@ -1,13 +1,58 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
 
+/* html, body,  */.third div, span, applet, object, iframe,
+.third h1, .third h2, .third h3, .third h4, .third h5, .third h6, .third p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, .third ol, .third ul, .third li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
 *{
-    padding: 0;
-    margin: 0;
+    /* padding: 0;
+    margin: 0; */
     box-sizing: border-box;
     
 }
 
 body{
+    display: block;
     background-color: black;
 }
 .third .logo{
@@ -110,14 +155,11 @@ line-height: 18px;
 
 
 }
-.third .select{
-    width: 50%;
-    position: fixed;
-}
+
 .third .second_main{
     display: flex;
-    margin-left: -20px;
-    padding: 10px;
+    margin-left: -10px;
+   
 }
 .third .padding{
     padding: 20px;
@@ -147,7 +189,7 @@ line-height: 18px;
 }
 
 .third .all_input{
-        /* width: 100%; */
+       
         padding: 8px 50px 8px 5px;
         border-radius: 8px;
         border: none;
@@ -155,14 +197,42 @@ line-height: 18px;
         color: white;
         width: 100%;
         
+        
 }
 
 
 .third option{
-    font-size: 6px;
+    
+   
+    width: 100px; 
+    height: 20px;
+
+    
 }
+
 .third select{
-    font-size:12px;
+    border: 2px soild red;
+    z-index: 1;
+
+}
+.third .select_main{
+    width: 197px;
+    overflow: hidden;
+    z-index: 1;
+   
+}
+
+.third .icon {
+    padding-left: 25px;
+    background: url('../../assets/email.png') no-repeat left;
+    background-size: 20px;
+    background-color: #302e2e;
+}
+.third .icon2 {
+    padding-left: 25px;
+    background: url("../../assets/plus.png") no-repeat left;
+    background-size: 20px;
+    background-color: #302e2e;
 }
 
 .third .middle_para{
@@ -232,14 +302,20 @@ line-height: 18px;
 
 
 }
-@media only screen and (max-width: 1024px){
+
+@media only screen and (max-width: 1074px){
     .third .first_main{
         display: block;
     }
     .third .second_main{
         display: block;
     }
+    .third .select_main
+    {
+        width: 100%;
+    }
 }  
+
 
 
 @media only screen and (max-width: 768px){
@@ -331,6 +407,10 @@ border-radius: 8px;
     }
     .third .base{
         margin-bottom: 20%;
+    }
+    .third .select_main
+    {
+        width: 100%;
     }
     
     

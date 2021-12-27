@@ -1,12 +1,47 @@
-import React from 'react';
-import './fourth.css';
+import React, {useState, useEffect} from 'react';
+import '../Third/third.css';
 import logo from '../../assets/firstbase.png';
 import lock from '../../assets/lock.png';
 import { NavLink } from 'react-router-dom';
 
 function Fourth() {
+
+    const getValues = () => {
+        const storedValues = localStorage.getItem('form2');
+        if (storedValues) {
+            return JSON.parse(storedValues);
+        }
+        return {
+            first: '',
+            middle: '',
+            last: '',
+            country: '',
+            email: '',
+            phone: ''
+        }
+    }
+
+    const [values, setValues] = useState(getValues)
+
+    const handleChange = e => {
+        setValues(prevValues => ({
+            ...prevValues, [e.target.name]: e.target.value,       
+        }));
+        // console.log(values)
+    }
+
+    const handleSubmit = () => {
+        localStorage.setItem('form2', JSON.stringify(values))
+    }
+
+    /* useEffect(() => {
+        
+    }, [values]) */
+
+
+
     return (
-        <div className='fourth'>
+        <div className='third'>
             <div class="logo">
                 <img src={logo} alt="" />
             </div>
@@ -43,16 +78,16 @@ function Fourth() {
                         <div class="first_main">
                             <div class="first_name">
                                 <h5>First Name<span id="star">*</span></h5>
-                                <input id="firstname" name="firstname" class="all_input" type="text" />
+                                <input id="firstname" name="first" class="all_input" type="text" value={values.first} onChange={(e) => handleChange(e)}/>
                             </div>
                             <div class="first_name">
                                 <h5>Middle Name<span id="optional">(Optional)</span></h5>
-                                <input id="middlename" name="middlename" class="all_input" type="text" />
+                                <input id="middlename" name="middle" class="all_input" type="text" value={values.middle} onChange={(e) => handleChange(e)}/>
 
                             </div>
                             <div class="first_name">
                                 <h5>Last Name<span id="star">*</span></h5>
-                                <input id="lastname" name="lastname" class="all_input" type="text" />
+                                <input id="lastname" name="last" class="all_input" type="text" value={values.last} onChange={(e) => handleChange(e)}/>
                             </div>
 
                         </div>
@@ -62,7 +97,8 @@ function Fourth() {
                         <div class="second_main">
                             <div class="first_name">
                                 <p>Country of Residency<span id="star">*</span></p>
-                                <select id="select" class="all_input">
+                                <div class="select_main">
+                                <select id="select" class="all_input" name='country' value={values.country} onChange={(e) => handleChange(e)}>
                                     <option value="Afghanistan">Afghanistan</option>
                                     <option value="Albania">Albania</option>
                                     <option value="Algeria">Algeria</option>
@@ -303,16 +339,16 @@ function Fourth() {
                                     <option value="Zambia">Zambia</option>
                                     <option value="Zimbabwe">Zimbabwe</option>
                                 </select>
-
+                                </div>
                             </div>
                             <div class="first_name">
                                 <p>Email<span id="star">*</span></p>
-                                <input id="email" name="email" class="all_input icon" type="email" />
+                                <input id="email" name="email" class="all_input icon" type="email" value={values.email} onChange={(e) => handleChange(e)} />
                             </div>
 
                             <div class="first_name">
                                 <p>Phone Number<span id="star">*</span></p>
-                                <input id="number" name="number" class="all_input icon2" type="text" />
+                                <input id="number" name="phone" class="all_input icon2" type="text" value={values.phone} onChange={(e) => handleChange(e)} />
                             </div>
 
                         </div>
@@ -325,11 +361,11 @@ function Fourth() {
 
                 <div class="buttons_two">
                     <div class="back_button">
-                        <NavLink to='/third'><a href="#">&larr;Back</a></NavLink>
+                        <NavLink to='/third' onClick={() => handleSubmit()}><a href="#">&larr;Back</a></NavLink>
 
                     </div>
                     <div class="next_button">
-                        <button type="submit">Next</button>
+                        <NavLink to='/five'><button type="submit" onClick={() => handleSubmit()}>Next</button></NavLink>
                     </div>
                 </div>
 

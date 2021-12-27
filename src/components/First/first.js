@@ -1,9 +1,46 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
+import axios from 'axios';
 import './first.css';
 import logo from '../../assets/firstbase.png';
 import { NavLink } from 'react-router-dom';
+import Loading from '../loading';
 
 function First() {
+
+    const [loading, setLoading] = useState(false);
+
+    const data = [
+        { "id": 1, "name": "Private Limited", "description": "hhdfjsdhsjd" },
+        { "id": 2, "name": "LLP", "description": "ffgfd" },
+        { "id": 3, "name": "Foreign subsidiary", "description": "fdgf" }
+    ];
+
+    const select = (id) => {
+        const item = document.getElementsByClassName('selected')[0];
+        if(item!=undefined) {
+            item.classList.remove('selected');
+        }
+        document.getElementById(`${id}`).classList.add('selected');
+    }
+
+    /* useEffect(() => {
+        
+    }, []) */
+
+    const ShowCompanies = () => {
+        return (
+            data.map(company => {
+                let x = company.id;
+                return (
+                    <div id={company.id} className="first_selector" onClick={() => select(x)}>
+                        <h1>{company.name}</h1>
+                        <p>{company.description}</p>
+                    </div>
+                )
+            })
+        )
+    }
+
     return (
         <div className='first'>
             <div class="logo">
@@ -28,15 +65,15 @@ function First() {
                 </div>
 
                 <div class="selectors">
-                    <div class="first_selector">
+                    {loading ? <Loading /> : <ShowCompanies />}
+                    {/* <div class="first_selector">
                         <h1>LLC </h1>
                         <p>Companies organized under an Operating Agreement, a contract between members specifying how the business will operate and how expenses and profits will be split. </p>
-
-                    </div>
-                    <div class="second_selector">
+                    </div> */}
+                    {/* <div class="second_selector">
                         <h1>C-Corporation </h1>
                         <p>Companies structured with the idea that control and ownership can be separate. Owners, called shareholders, may or may not be involved in the day-to-day operations.  </p>
-                    </div>
+                    </div> */}
                     <div class="link">
                         <a href=""><p>Not sure which one?</p></a>
                     </div>
