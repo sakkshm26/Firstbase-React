@@ -32,7 +32,7 @@ function Thirteen() {
 
 
             <div class="button1">
-                <NavLink to='/nine'>&larr;back</NavLink>
+                <NavLink to='/seven'>&larr;back</NavLink>
                 <a className='next'>Next</a>
 
 

@@ -39,8 +39,8 @@ function Nine() {
 
 
                 <div class="button1">
-                    <NavLink to='/seven'>&larr;back</NavLink>
-                    <NavLink className='next' to='/thirteen'>Next</NavLink>
+                    <NavLink to='/third'>&larr;back</NavLink>
+                    <NavLink className='next' to='/fourth'>Next</NavLink>
 
 
 

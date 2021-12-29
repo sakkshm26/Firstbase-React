@@ -17,7 +17,7 @@ time, mark, audio, video {
 	padding: 0;
 	border: 0;
 	font-size: 100%;
-	font: inherit;
+	/* font: inherit; */
 	vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
@@ -89,6 +89,15 @@ line-height: 18px;
     color: grey;
     font-size: 12px;
 }
+.second .first_left{
+    display: flex;
+}
+.compmay_result{
+    color: white;
+    font-size: 13px;
+    padding-left: 2px;
+
+}
 .second .percentage{
     color: grey;
     font-size: 12px;
@@ -119,71 +128,67 @@ line-height: 18px;
     color: grey;
 
 }
-.second .selectors{
-    justify-content: center;
-    height: 100%;
-    width: 100%;
+.second .padding{
+    padding: 20px;
 }
-.second .first_selector{
-    background-color: #1c1c1e;
-    border: 2px solid transparent;
-    border-radius: 8px;
-    height: 100%;
-    width: 100%;
-    justify-content: center;
-    margin-top: 20px;
+.second .first_name{
     color: white;
-    font-size: 10px;
-    padding:16px 14px 14px 10px;
-    cursor: pointer;
-
+    padding: 10px;
 }
-.second .first_selector:hover{
-    background-color: #26262b;
+.second .first_name h5{
+    margin-bottom:  15px;
 
+    font-size: 15px;
+    font-weight: 400;
+}
+.second .first_name p{
+    margin-bottom:  15px;
 
-}
-.second .first_selector p{
-    font-size: 14px;
-    color: grey;
-
-}
-.second .first_selector h1{
-    font-size: 14px;
-}
-.second .second_selector{
-    background-color: #1c1c1e;
-    border: 2px solid transparent;
+    font-size: 15px;
+    font-weight: 400;
+} 
+.second .all_input{
+    margin-top: 5%;
+    align-items: center; 
+    padding: 8px 50px 8px 5px;
     border-radius: 8px;
-    height: 100%;
-    width: 100%;
-    justify-content: center;
-    margin-top: 20px;
+    border: none;
+    background-color: #302e2e;
     color: white;
-    font-size: 10px;
-    padding:16px 14px 14px 10px;
-    cursor: pointer;
-}
-.second .second_selector:hover{
-    background-color:#26262b;
-}
-.second .second_selector p{
-    font-size: 13px;
-    color: grey;
-}
-.second .second_selector h1{
-    font-size: 14px;
-}
-.second a{
+    width: 100%;
 
-    text-decoration: none;
-    color: red;
+
+}
+.second option{
+    width: 100px; 
+    height: 20px;
+}
+.second select{
+    border: 2px soild red;
+    z-index: 1;
+
+}
+.second .select_main{
+    width: 197px;
+    /* overflow: hidden; */
+    z-index: 1;
+    padding: 15px 20px 15px 20px; 
+    font-size: 16px;
+    font-weight: 400;
+    width: 100%;
+    font-family: 'Poppins', sans-serif;
 }
 .second .link{
     color: red;
     font-size: 13px;
     margin-top:  20px;
 }
+.second a{
+
+    text-decoration: none;
+    color: red;
+}
+
 .second .buttons{
     display: space-around;
     
@@ -216,7 +221,7 @@ line-height: 18px;
     color: rgb(73, 71, 71);
     line-height: 20px;
     overflow: auto; 
-
+    text-decoration: none;
 
     
 }
@@ -237,28 +242,35 @@ line-height: 18px;
 
 }
 
+@media only screen and (max-width: 1074px){
+    .second .first_main{
+        display: block;
+    }
+    .second .second_main{
+        display: block;
+    }
+    .second .select_main
+    {
+        width: 100%;
+    }
+    .second .all_input{
+        margin: 0px;
+    }
+}  
+
+
+
 @media only screen and (max-width: 768px){
     .second .container{
         width: auto;
         height: auto;
         
     }
-   
-    .second .selectors{
-        width: 100%;
-        height: 100%;
-       
-    }
+    
     .second .logo{
         margin: 20px;
     }
     
-    .second .selectors{
-        padding: 20px;
-        background-color: #121212;
-        border: 1px solid #1c1c1e;
-        border-radius: 8px;
-    }
     .second .container .company_heading h2{
         
         text-align: left;
@@ -285,7 +297,7 @@ line-height: 18px;
         bottom: 0;
         left: 0;
         right: 0;
-        padding: 46px;
+        padding: 36px;
         background-color: #121212;
         z-index: 3;
 
@@ -317,12 +329,31 @@ line-height: 18px;
 
     }
     .second .back_button a{
-        padding: 15px 40px 15px 20px;
+        padding: 21px 40px 18px 20px;
         background-color: #2a2a2c;
         border-radius: 8px;
         color: white;
     
     }
-    
+    .second .first_main{
+        display: block;
+    }
+    .second .second_main{
+        display: block;
+    }
+    .second .main{
+        padding: 20px;
+        background-color: #121212;
+        color: inherit;
+        border: 1px solid #1c1c1e;
+        border-radius: 8px;
+    }
+    .second .base{
+        margin-bottom: 20%;
+    }
+    .second .select_main
+    {
+        width: 100%;
+    }
     
 }

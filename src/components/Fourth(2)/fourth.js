@@ -31,12 +31,13 @@ function Fourth2() {
 
                                     </span>
                                 </label><br />
-                                <input type="text" list="search" />
+                                <input type="text" list="search" value={localStorage.getItem('CompanyType') ? localStorage.getItem('CompanyType') : ''} />
                                 <datalist id="search">
+                                    {localStorage.getItem('CompanyType') ? localStorage.getItem('CompanyType') : <div>
                                     <option value="LLC" />
                                     <option value="L.L.C" />
                                     <option value="limited libiality company" />
-
+                                    </div>}                        
                                 </datalist>
 
                             </form>
@@ -46,17 +47,14 @@ function Fourth2() {
                             <h5>Tips for Choosing a Name</h5>
                             <ul>
                                 <li>
-                                    <p>Avoid Restricted Words</p>
-                                    <h6>Words like “Bank” or “School” are subject to approval by the state. Here’s a full list
-                                        of <span id="span">restricted Words
-
-                                        </span></h6>
+                                    <p>Use 2 words preferably</p>
+                                    <h6>1st the unique name and 2nd the activity. For example - Tata Motors Pvt Ltd</h6>
 
                                 </li>
                                 <li>
-                                    <p>Use English Words</p>
-                                    <h6>Choosing a company name in a different language can be delayed and even denied by the
-                                        state.</h6>
+                                    <p>Avoid Restricted Words</p>
+                                    <h6>Words like "Finance", "Bank" or "School" are subject to approval by the state. Here's a full list of restricted words.
+                                    </h6>
 
                                 </li>
                                 <li>
@@ -72,7 +70,7 @@ function Fourth2() {
                                         state approval.</h6>
 
                                 </li>
-                                <li>
+                                {/* <li>
                                     <p>Consider Case-sensitivity</p>
                                     <h6>Uppercase and lowercase letters are considered. If you enter, “BusineSs”, the state will
                                         register as : “BusineSs, LLC”.</h6>
@@ -81,7 +79,7 @@ function Fourth2() {
                                 <li>
                                     <p>Double-check Spelling</p>
                                     <h6>Make sure the company name is spelled correctly.</h6>
-                                </li>
+                                </li> */}
                             </ul>
 
 

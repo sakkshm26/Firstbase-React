@@ -1,7 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
 body{
     margin:0;
     padding:0;
-    font-family: acumin-pro,sans-serif;
+    font-family: 'Poppins', sans-serif;
     background-color: black;
     color:white;
    width:100%;
@@ -91,6 +93,7 @@ body{
     color: red;
 }
 .thirteen .box input{
+    color: white;
     margin-left:1vw;
     margin-right: 0.5vw;
 }
@@ -161,7 +164,7 @@ body{
     body{
         margin:0;
         padding:0;
-        font-family: acumin-pro,sans-serif;
+        font-family: 'Poppins', sans-serif;
         background-color: black;
         color:white;
        width:100%;
@@ -315,7 +318,7 @@ body{
     body{
     margin:0;
     padding:0;
-    font-family: acumin-pro,sans-serif;
+    font-family: 'Poppins', sans-serif;
     background-color: black;
     color:white;
    width:100%;
@@ -476,7 +479,7 @@ body{
     body{
     margin:0;
     padding:0;
-    font-family: acumin-pro,sans-serif;
+    font-family: 'Poppins', sans-serif;
     background-color: black;
     color:white;
    width:100%;
@@ -637,7 +640,7 @@ body{
      body{
     margin:0;
     padding:0;
-    font-family: acumin-pro,sans-serif;
+    font-family: 'Poppins', sans-serif;
     background-color: black;
     color:white;
    width:100%;
@@ -798,7 +801,7 @@ body{
     body{
    margin:0;
    padding:0;
-   font-family: acumin-pro,sans-serif;
+   font-family: 'Poppins', sans-serif;
    background-color: black;
    color:white;
   width:100%;
@@ -959,7 +962,7 @@ body{
     body{
    margin:0;
    padding:0;
-   font-family: acumin-pro,sans-serif;
+   font-family: 'Poppins', sans-serif;
    background-color: black;
    color:white;
   width:100%;
@@ -1117,7 +1120,7 @@ body{
     body{
    margin:0;
    padding:0;
-   font-family: acumin-pro,sans-serif;
+   font-family: 'Poppins', sans-serif;
    background-color: black;
    color:white;
   width:100%;

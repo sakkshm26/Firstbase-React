@@ -38,7 +38,18 @@ function Fourth() {
         
     }, [values]) */
 
-
+    const checkBox = () => {
+        const item1 = document.getElementById('director');
+        const item2 = document.getElementById('shareholder');
+        if(item1.checked && item2.checked){
+            document.getElementById('back').classList.add('disable-click');
+            document.getElementById('next').classList.add('disable-click');
+        }
+        else{
+            document.getElementById('back').classList.remove('disable-click');
+            document.getElementById('next').classList.remove('disable-click');
+        }
+    }
 
     return (
         <div className='third'>
@@ -58,7 +69,7 @@ function Fourth() {
                 </div>
 
                 <div class="percentage flex">
-                    <p>10%</p>
+                    <p>75%</p>
                 </div>
 
                 <div class="company_heading">
@@ -357,15 +368,22 @@ function Fourth() {
                     <section class="middle_para base">
                         <p>What country do you live in? </p>
                     </section>
+
+                    <section className='checkbox'>
+                        <input type="checkbox" id="director" name="director" onClick={() => checkBox()}/>
+                        <label for="director"> Is director?</label><br/>
+                        <input type="checkbox" id="shareholder" name="shareholder" onClick={() => checkBox()}/>
+                        <label for="shareholder"> Is shareholder?</label><br/>
+                    </section>
+                    
                 </div>
 
-                <div class="buttons_two">
+                <div class="buttons_two fourth-button">
                     <div class="back_button">
-                        <NavLink to='/third' onClick={() => handleSubmit()}><a href="#">&larr;Back</a></NavLink>
-
+                        <button id='back'><NavLink to='/third'  onClick={() => handleSubmit()}>&larr;Back</NavLink></button>
                     </div>
                     <div class="next_button">
-                        <NavLink to='/five'><button type="submit" onClick={() => handleSubmit()}>Next</button></NavLink>
+                        <button id='next' type="submit" ><NavLink to='/five' onClick={() => handleSubmit()}>Next</NavLink></button>
                     </div>
                 </div>
 

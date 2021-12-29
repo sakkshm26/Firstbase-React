@@ -10,9 +10,10 @@ function First() {
     const [loading, setLoading] = useState(false);
 
     const data = [
-        { "id": 1, "name": "Private Limited", "description": "hhdfjsdhsjd" },
-        { "id": 2, "name": "LLP", "description": "ffgfd" },
-        { "id": 3, "name": "Foreign subsidiary", "description": "fdgf" }
+        { "id": 1, "name": "Private Limited", "description": "This is most suited for startups planning to raise fund" },
+        { "id": 2, "name": "Limited Liability Partnership", "description": "This is for family business. Cannot raise funds." },
+        { "id": 3, "name": "Foreign subsidiary", "description": "This is for foreign companies planning to setup operations in India" },
+        { "id": 4, "name": "Proprietor", "description": "This is the easiest way to start the business for an individual" }
     ];
 
     const select = (id) => {
@@ -41,6 +42,11 @@ function First() {
         )
     }
 
+    const handleSubmit = () => {
+        const item = document.getElementsByClassName('selected')[0].firstChild.textContent;
+        localStorage.setItem('CompanyType', item);
+    }
+
     return (
         <div className='first'>
             <div class="logo">
@@ -54,7 +60,7 @@ function First() {
                 </div>
 
                 <div class="percentage flex">
-                    <p>10%</p>
+                    <p>0%</p>
                 </div>
 
                 <div class="company_heading">
@@ -80,7 +86,7 @@ function First() {
 
                     <div class="buttons">
                         <div class="next_button">
-                            <NavLink to='/second'><button>Next</button></NavLink>
+                            <NavLink to='/second' onClick={() => handleSubmit()}><button>Next</button></NavLink>
                         </div>
                     </div>
 

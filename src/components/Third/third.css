@@ -17,7 +17,7 @@ time, mark, audio, video {
 	padding: 0;
 	border: 0;
 	font-size: 100%;
-	font: inherit;
+	/* font: inherit; */
 	vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
@@ -248,7 +248,14 @@ line-height: 18px;
     font-weight: 600;
 }
 
+.third .checkbox{
+    margin-top: 15px;
+    font-size: 15px;
+}
 
+.third #shareholder{
+    margin: 20px 3px;
+}
 
 .third .buttons{
     display: space-around;
@@ -257,7 +264,7 @@ line-height: 18px;
 }
 .third .buttons_two{
     display: space-around;
-    
+    font-family: inherit;
     
 
 }
@@ -282,9 +289,7 @@ line-height: 18px;
     line-height: 20px;
     overflow: auto; 
     text-decoration: none;
-
-
-    
+    font-family: 'Poppins', sans-serif;
 }
 .third .back_button{
     margin-top: 15%;
@@ -301,6 +306,19 @@ line-height: 18px;
 
 
 
+}
+
+.third .next_button a{
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+}
+
+.fourth-button #back{
+    background-color: transparent;
+    border: none;
+    box-shadow: none;
+    font-size: 16px;
 }
 
 @media only screen and (max-width: 1074px){
@@ -399,14 +417,14 @@ line-height: 18px;
         display: block;
     }
     .third .main{
-        padding: 20px;
+        padding: 0 20px 125px 20px;
 background-color: #121212;
 color: inherit;
 border: 1px solid #1c1c1e;
 border-radius: 8px;
     }
     .third .base{
-        margin-bottom: 20%;
+        margin-bottom: 8%;
     }
     .third .select_main
     {
@@ -414,4 +432,14 @@ border-radius: 8px;
     }
     
     
+}
+
+/* Utility Classes */
+.disable-click{
+    cursor: not-allowed !important;
+}
+
+.disable-click a{
+    pointer-events: none !important;
+    cursor: not-allowed;
 }

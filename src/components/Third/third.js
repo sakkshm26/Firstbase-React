@@ -60,7 +60,7 @@ function Third() {
                 </div>
 
                 <div class="percentage flex">
-                    <p>10%</p>
+                    <p>50%</p>
                 </div>
 
                 <div class="company_heading">
@@ -96,7 +96,8 @@ function Third() {
                         <div class="first_name">
                             <p>Country of Residency<span id="star">*</span></p>
                             <div class="select_main">
-                    <select class="all_input select_main" name='country' value={values.country} onChange={(e) => handleChange(e)}>
+                                <p className='all_input'>India</p>
+                    {/* <select class="all_input select_main" name='country' value={values.country} onChange={(e) => handleChange(e)}>
                         
                                 <option value="Afghanistan">Afghanistan</option>
                                 <option value="Albania">Albania</option>
@@ -338,7 +339,7 @@ function Third() {
                                 <option value="Zambia">Zambia</option>
                                 <option value="Zimbabwe">Zimbabwe</option>
                                 
-                            </select>
+                            </select> */}
                         </div>
                         </div>
                         <div class="first_name" data-error="This field is required">
