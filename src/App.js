@@ -8,11 +8,14 @@ import Second from './components/Second/second';
 import Seven from './components/Seven/seven';
 import Third from './components/Third/third';
 import Thirteen from './components/Thirteen/thirteen';
+import Fourteen from './components/Fourteen/Fourteen';
+import SignUp from './components/SignUp';
+import Dashboard from './components/Dashboard/Dashboard';
 
 function App() {
   return (
     <div className="App">
-      <Routes>
+      {/* <Routes>
         <Route exact path='/' element={<First />} />
         <Route exact path='/second' element={<Second />} />
         <Route exact path='/third' element={<Third />} />
@@ -21,7 +24,10 @@ function App() {
         <Route exact path='/five' element={<Fourth2 />} />
         <Route exact path='/seven' element={<Seven />} />
         <Route exact path='/thirteen' element={<Thirteen />} />
-      </Routes>
+      </Routes> */}
+      {/* <Fourteen /> */}
+      {/* <SignUp /> */}
+      <Dashboard />
     </div>
   );
 }

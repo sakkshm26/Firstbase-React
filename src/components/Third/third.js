@@ -1,8 +1,9 @@
-import React, {useState, useEffect} from 'react';
+import React, { useState, useEffect } from 'react';
 import './third.css';
 import logo from '../../assets/firstbase.png';
 import lock from '../../assets/lock.png';
 import { NavLink } from 'react-router-dom';
+import axios from 'axios';
 
 function Third() {
 
@@ -29,13 +30,50 @@ function Third() {
 
     const handleChange = e => {
         setValues(prevValues => ({
-            ...prevValues, [e.target.name]: e.target.value,       
+            ...prevValues, [e.target.name]: e.target.value,
         }));
         // console.log(values)
     }
 
     const handleSubmit = () => {
-        localStorage.setItem('form', JSON.stringify(values))
+        localStorage.setItem('form', JSON.stringify(values));
+        const axios = require('axios')
+
+        /* axios.post('https:sample-endpoint.com/user', {
+            Name: 'Fred',
+            Age: '23'
+        })
+            .then(function (response) {
+                console.log(response);
+            }) */
+
+        const {first,middle,email,phone,country,last} = getValues()
+
+        var bodyFormData = new FormData();
+        bodyFormData.append('first_name', first);
+        bodyFormData.append('middle_name', middle);
+        bodyFormData.append('last_name', last);
+        bodyFormData.append('email', email);
+        bodyFormData.append('phone_no', phone);
+        bodyFormData.append('country', country);
+        bodyFormData.append('company_type_id', localStorage.getItem('CompanyType'));
+        bodyFormData.append('state_id', localStorage.getItem('State'));
+        axios({
+            method: 'post',
+            // url: BASE_URL + 'juser/getinvolved',
+            url: 'http://3.110.143.87/index.php?r=jprimary/createcompany',
+            data: bodyFormData,
+        })
+        .then((response) => {
+            console.log(response);
+        }).catch(error => {
+            console.log(error);
+        })
+        // console.log(bodyFormData.entries());
+        // console.log(first);
+        /* for (var pair of bodyFormData.entries()) {
+            console.log(pair[0]+ ', ' + pair[1]); 
+        } */
     }
 
     /* const handleSubmit = e => {
@@ -97,7 +135,7 @@ function Third() {
                             <p>Country of Residency<span id="star">*</span></p>
                             <div class="select_main">
                                 <p className='all_input'>India</p>
-                    {/* <select class="all_input select_main" name='country' value={values.country} onChange={(e) => handleChange(e)}>
+                                {/* <select class="all_input select_main" name='country' value={values.country} onChange={(e) => handleChange(e)}>
                         
                                 <option value="Afghanistan">Afghanistan</option>
                                 <option value="Albania">Albania</option>
@@ -340,7 +378,7 @@ function Third() {
                                 <option value="Zimbabwe">Zimbabwe</option>
                                 
                             </select> */}
-                        </div>
+                            </div>
                         </div>
                         <div class="first_name" data-error="This field is required">
                             <p>Email<span id="star">*</span></p>

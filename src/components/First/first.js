@@ -7,14 +7,15 @@ import Loading from '../loading';
 
 function First() {
 
-    const [loading, setLoading] = useState(false);
+    const [loading, setLoading] = useState(true);
+    const [data, setData] = useState({});
 
-    const data = [
+    /* const data = [
         { "id": 1, "name": "Private Limited", "description": "This is most suited for startups planning to raise fund" },
         { "id": 2, "name": "Limited Liability Partnership", "description": "This is for family business. Cannot raise funds." },
         { "id": 3, "name": "Foreign subsidiary", "description": "This is for foreign companies planning to setup operations in India" },
         { "id": 4, "name": "Proprietor", "description": "This is the easiest way to start the business for an individual" }
-    ];
+    ]; */
 
     const select = (id) => {
         const item = document.getElementsByClassName('selected')[0];
@@ -24,9 +25,14 @@ function First() {
         document.getElementById(`${id}`).classList.add('selected');
     }
 
-    /* useEffect(() => {
-        
-    }, []) */
+    useEffect(() => {
+        axios.get('http://3.110.143.87/index.php?r=jprimary/allcompanytypes').then(response => {
+            const item = response.data.company_types;
+            setData(item);
+            // console.log(response.data.com);
+            setLoading(false);
+        }).catch('Error');
+    }, [])
 
     const ShowCompanies = () => {
         return (
@@ -44,7 +50,7 @@ function First() {
 
     const handleSubmit = () => {
         const item = document.getElementsByClassName('selected')[0].firstChild.textContent;
-        localStorage.setItem('CompanyType', item);
+        localStorage.setItem('CompanyType', '1');
     }
 
     return (

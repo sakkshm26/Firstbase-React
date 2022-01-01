@@ -33,9 +33,28 @@ function Second() {
     }
 
     const handleSubmit = () => {
-        const item = document.getElementsByClassName('selected')[0].firstChild.textContent;
-        localStorage.setItem('State', item);
+        console.log('YES')
+        // const item = document.getElementsByClassName('selected')[0].firstChild.textContent;
+        localStorage.setItem('State', '1');
+        console.log(localStorage.getItem('State'));
+        /* try{
+            console.log('YES')
+        // const item = document.getElementsByClassName('selected')[0].firstChild.textContent;
+        localStorage.setItem('State', '1');
+        console.log(localStorage.getItem('State'));
+        }catch(error){
+            console.log(error);
+        } */
     }
+
+    /* useEffect(() => {
+        axios.get('http://3.110.143.87/index.php?r=jprimary/allcompanytypes').then(response => {
+            const item = response.data.company_types;
+            setData(item);
+            // console.log(response.data.com);
+            setLoading(false);
+        }).catch('Error');
+    }, []) */
 
     return (
         <div className='second'>
@@ -132,7 +151,7 @@ function Second() {
 
                         </div>
                         <div className="next_button">
-                            <NavLink to='/third' onClick={() => handleSubmit()}><button>Next</button></NavLink>
+                            <NavLink to='/third' ><button onClick={() => handleSubmit()}>Next</button></NavLink>
                         </div>
                     </div>
 
