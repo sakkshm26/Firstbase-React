@@ -55,8 +55,8 @@ function Third() {
         bodyFormData.append('last_name', last);
         bodyFormData.append('email', email);
         bodyFormData.append('phone_no', phone);
-        bodyFormData.append('country', country);
-        bodyFormData.append('company_type_id', localStorage.getItem('CompanyType'));
+        bodyFormData.append('country', "IND");
+        bodyFormData.append('company_type_id', localStorage.getItem('CompanyType')|| 1);
         bodyFormData.append('state_id', localStorage.getItem('State'));
         axios({
             method: 'post',

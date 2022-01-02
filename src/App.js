@@ -15,7 +15,7 @@ import Dashboard from './components/Dashboard/Dashboard';
 function App() {
   return (
     <div className="App">
-      {/* <Routes>
+      <Routes>
         <Route exact path='/' element={<First />} />
         <Route exact path='/second' element={<Second />} />
         <Route exact path='/third' element={<Third />} />
@@ -24,10 +24,12 @@ function App() {
         <Route exact path='/five' element={<Fourth2 />} />
         <Route exact path='/seven' element={<Seven />} />
         <Route exact path='/thirteen' element={<Thirteen />} />
-      </Routes> */}
+        <Route exact path='/dashboard' element={<Dashboard />} />
+
+      </Routes>
       {/* <Fourteen /> */}
       {/* <SignUp /> */}
-      <Dashboard />
+      {/* <Dashboard /> */}
     </div>
   );
 }
