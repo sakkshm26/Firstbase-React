@@ -18,7 +18,8 @@ function Fourth() {
             last: '',
             country: '',
             email: '',
-            phone: ''
+            phone: '',
+            shares:''
         }
     }
 
@@ -42,7 +43,7 @@ function Fourth() {
         bodyFormData.append('email', values.email);
         bodyFormData.append('phone_no', values.phone);
         bodyFormData.append('country', values.country);
-        bodyFormData.append('no_of_shares', '0');
+        bodyFormData.append('no_of_shares', values.sharesAmount);
         bodyFormData.append('is_director', '0');
         bodyFormData.append('is_shareholder', '0');
 
@@ -66,7 +67,16 @@ function Fourth() {
     const checkBox = () => {
         const item1 = document.getElementById('director');
         const item2 = document.getElementById('shareholder');
-        if (item1.checked && item2.checked) {
+        const sharesInput = document.getElementById('sharesInput')
+        if (item2.checked) {
+            if (sharesInput.style.display === "none") {
+                sharesInput.style.display = "block";
+              }
+        }
+        if (item2.checked==false){
+            sharesInput.style.display = "none";
+        }
+        if (item1.checked==false && item2.checked==false) {
             document.getElementById('back').classList.add('disable-click');
             document.getElementById('next').classList.add('disable-click');
         }
@@ -123,7 +133,7 @@ function Fourth() {
                             </div>
                             <div class="first_name">
                                 <h5>Last Name<span id="star">*</span></h5>
-                                <input id="lastname" name="last" class="all_input" type="text" value={values.last} onChange={(e) => handleChange(e)} />
+                                <input id="lastname" name="last" class="all_input" type="text" value={values.last} onChange={(e) => handleChange(e)} required/>
                             </div>
 
                         </div>
@@ -399,6 +409,10 @@ function Fourth() {
                         <label for="director"> Is director?</label><br />
                         <input type="checkbox" id="shareholder" name="shareholder" onClick={() => checkBox()} />
                         <label for="shareholder"> Is shareholder?</label><br />
+                        <div class="first_name" id="sharesInput" style={{display:'none'}}>
+                            <p>Shares Amount<span id="star">*</span></p>
+                            <input id="shares" class="all_input icon2" type="number" value={values.sharesAmount} onChange={(e) => handleChange(e)} />
+                        </div>
                     </section>
 
                 </div>
@@ -410,6 +424,7 @@ function Fourth() {
                     <div class="next_button">
                         <button id='next' type="submit" ><NavLink to='/five' onClick={() => handleSubmit()}>Next</NavLink></button>
                     </div>
+
                 </div>
 
             </div>
