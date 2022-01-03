@@ -266,7 +266,7 @@ body{
         color: red;
     }
     .seven .box input{
-        margin-left:1vw;
+        margin-left:0;
         margin-right: 0.5vw;
         margin-top: 10px;
         border: none;

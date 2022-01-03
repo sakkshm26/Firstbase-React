@@ -58,7 +58,7 @@ const Seven = () => {
 
                     <div class="button1">
                         <NavLink to='/five'>&larr;back</NavLink>
-                        <NavLink className='next' to='/thirteen'>Next</NavLink>
+                        <NavLink className='next' to='/nine'>Next</NavLink>
                     </div>
 
 
