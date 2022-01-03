@@ -79,7 +79,7 @@ border-radius: 8px;
 position: relative;
 justify-content: center;
 margin: 0 auto;
-font-family: 'Poppins', sans-serif;
+
 line-height: 18px;
 
 
@@ -190,13 +190,13 @@ line-height: 18px;
 
 .third .all_input{
        
-        padding: 8px 50px 8px 5px;
+        padding: 6px 50px 6px 5px;
         border-radius: 8px;
         border: none;
         background-color: #302e2e;
         color: white;
         width: 100%;
-        
+        font-size: 14px;
         
 }
 
@@ -289,7 +289,7 @@ line-height: 18px;
     line-height: 20px;
     overflow: auto; 
     text-decoration: none;
-    font-family: 'Poppins', sans-serif;
+    
 }
 .third .back_button{
     margin-top: 15%;
@@ -310,7 +310,7 @@ line-height: 18px;
 
 .third .next_button a{
     text-decoration: none;
-    font-family: 'Poppins', sans-serif;
+    
     color: white;
 }
 

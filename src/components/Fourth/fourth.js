@@ -419,10 +419,10 @@ function Fourth() {
 
                 <div class="buttons_two fourth-button">
                     <div class="back_button">
-                        <button id='back'><NavLink to='/third' onClick={() => handleSubmit()}>&larr;Back</NavLink></button>
+                        <button id='back'><NavLink to='/nine' onClick={() => handleSubmit()}>&larr;Back</NavLink></button>
                     </div>
                     <div class="next_button">
-                        <button id='next' type="submit" ><NavLink to='/five' onClick={() => handleSubmit()}>Next</NavLink></button>
+                        <button id='next' type="submit" ><NavLink to='/thirteen' onClick={() => handleSubmit()}>Next</NavLink></button>
                     </div>
 
                 </div>

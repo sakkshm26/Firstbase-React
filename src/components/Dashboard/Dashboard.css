@@ -71,6 +71,11 @@
    
 } */
 
+.dashboard .mobile-navbar{
+    display: none;
+    position: absolute;
+}
+
 .dashboard .main-area{
     grid-area: main-area;
 }
@@ -79,7 +84,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 15px 10px;
+    padding: 10px 10px;
     border-bottom: 1px solid #1c1c1e;
 }
 
@@ -180,4 +185,98 @@
 .dashboard .steps p{
     font-size: 12px;
     color: var(--text-light);
+}
+
+.dashboard .warning{
+    display: flex;
+    align-items: center;
+    background-color: #252528;
+    color: #ff453b;
+    margin: 15px 6px;
+    border-radius: 8px;
+    font-size: 14px;
+    padding: 5px 16px;
+    width: 62%;
+}
+
+.dashboard .warning p{
+    margin-left: 20px;
+}
+
+.dashboard .company-details{
+    display: flex;
+    align-content: center;
+    flex-wrap: wrap;
+}
+
+.dashboard .company-details .box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: rgba(255,255,255,.08);
+    margin: 10px 10px 10px 7px;
+    padding: 0 10px;
+    width: 22%;
+    border-radius: 8px;
+}
+
+.dashboard .company-details .box h4{
+    font-weight: lighter;
+    font-size: 15px;
+    margin-top: 25px;
+    margin-bottom: 15px;
+}
+
+.dashboard .company-details .box p{
+    color: var(--text-light);
+    font-size: 14px;
+    margin: 0;
+}
+
+.dashboard .company-details .box .task{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #ff453b;
+    margin: 35px 0 18px 0;
+}
+
+.dashboard .company-details .box .task p{
+    color: #ff453b;
+}
+
+@media screen and (max-width: 840px) {
+    .dashboard .nav-bar{
+        display: none;
+    }
+
+    .dashboard .mobile-navbar{
+        display: block;
+    }
+
+    #select-company{
+        display: none;
+    }
+
+    .dashboard .main-top {
+        justify-content: flex-end;
+    }
+
+    /* Bootstrap */
+
+    .navbar-light .navbar-toggler-icon {
+        background-image: url('data:image/svg+xml,%3csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 30 30%27%3e%3cpath stroke=%27rgba%28255, 255, 255, 1%29%27 stroke-linecap=%27round%27 stroke-miterlimit=%2710%27 stroke-width=%272%27 d=%27M4 7h22M4 15h22M4 23h22%27/%3e%3c/svg%3e');
+    }
+
+    .offcanvas{
+        background-color: #121212;
+    }
+
+    .offcanvas-start {
+        width: 322px;
+    }
+
+    .nav-link {
+        color: white;
+    }
 }

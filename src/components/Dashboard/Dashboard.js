@@ -2,12 +2,13 @@ import React from 'react';
 import './Dashboard.css';
 import logo from '../../assets/firstbase.png';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faPlus, faQuestion, faCog, faAngleDown, faSignOutAlt, faExclamationCircle } from '@fortawesome/free-solid-svg-icons';
+import { faPlus, faQuestion, faCog, faAngleDown, faSignOutAlt, faExclamationCircle, faAngleRight } from '@fortawesome/free-solid-svg-icons';
+import { Navbar, Container, Nav, NavDropdown, FormControl, Button, Offcanvas } from 'react-bootstrap';
 
 function Dashboard() {
     return (
         <div className='dashboard'>
-            <div className='nav-bar'>
+            <nav className='nav-bar'>
                 <div className='top'>
                     <div className='logo'>
                         <img src={logo} />
@@ -28,7 +29,33 @@ function Dashboard() {
                         <li><FontAwesomeIcon icon={faQuestion} className='icon-3' />Help</li>
                     </ul>
                 </div>
-            </div>
+            </nav>
+            <Navbar bg="black" className='mobile-navbar' expand={false}>
+                <Container fluid>
+                    <Navbar.Toggle aria-controls="offcanvasNavbar"/>
+                    <Navbar.Offcanvas
+                        id="offcanvasNavbar"
+                        aria-labelledby="offcanvasNavbarLabel"
+                        placement="start">
+                        <Offcanvas.Body>
+                            <Nav className="justify-content-end flex-grow-1 pe-3">                    
+                                <NavDropdown title="Dropdown" id="offcanvasNavbarDropdown">
+                                    <NavDropdown.Item href="#action3">Gigmo Solutions Inc.</NavDropdown.Item>
+                                    <NavDropdown.Item href="#action4">Incorporated</NavDropdown.Item>
+                                    <NavDropdown.Divider />
+                                    <NavDropdown.Item href="#action5">
+                                        Add a new company
+                                    </NavDropdown.Item>
+                                </NavDropdown>
+                                <Nav.Link href="#action1">Dashboard</Nav.Link>
+                                <Nav.Link href="#action2">Details</Nav.Link>
+                                <Nav.Link href="#action2">Rewards</Nav.Link>
+                                <Nav.Link href="#action2">Documents</Nav.Link>
+                            </Nav>
+                        </Offcanvas.Body>
+                    </Navbar.Offcanvas>
+                </Container>
+            </Navbar>
             <div className='main-area'>
                 <div className='main-top'>
                     <select id="select-company">
@@ -40,7 +67,7 @@ function Dashboard() {
                             <div className='profile-photo'>
                                 <span>R</span>
                             </div>
-                            <FontAwesomeIcon icon={faAngleDown} id='arrow-icon'/>
+                            <FontAwesomeIcon icon={faAngleDown} id='arrow-icon' />
                         </div>
                         <div className='sign-out'>
                             <FontAwesomeIcon icon={faSignOutAlt} id='signout-icon' />
@@ -85,8 +112,58 @@ function Dashboard() {
                         </div>
                     </div>
                     <div className='warning'>
-                        <FontAwesomeIcon icon={faExclamationCircle} />
+                        <FontAwesomeIcon icon={faExclamationCircle} id='excl-icon' />
                         <p>IMPORTANT: Must complete all tasks for timely and accurate processing of your company's EIN and bank account.</p>
+                    </div>
+                    <div className='company-details'>
+                        <div className='box'>
+                            <h4>Responsible Party</h4>
+                            <p>The person responsible for forming Gigmo Solutions Inc.</p>
+                            <div className='task'>
+                                <p>Complete Task</p>
+                                <FontAwesomeIcon icon={faAngleRight} />
+                            </div>
+                        </div>
+                        <div className='box'>
+                            <h4>Business Details</h4>
+                            <p>Provide some additional information about Gigmo Solutions Inc.</p>
+                            <div className='task'>
+                                <p>Complete Task</p>
+                                <FontAwesomeIcon icon={faAngleRight} />
+                            </div>
+                        </div>
+                        <div className='box'>
+                            <h4>Board of Directors</h4>
+                            <p>Appoint the officers for forming Gigmo Solutions Inc.</p>
+                            <div className='task'>
+                                <p>Complete Task</p>
+                                <FontAwesomeIcon icon={faAngleRight} />
+                            </div>
+                        </div>
+                        <div className='box'>
+                            <h4>Officers</h4>
+                            <p>Appoint the officers for forming Gigmo Solutions Inc.</p>
+                            <div className='task'>
+                                <p>Complete Task</p>
+                                <FontAwesomeIcon icon={faAngleRight} />
+                            </div>
+                        </div>
+                        <div className='box'>
+                            <h4>Puneet Shareholder Details</h4>
+                            <p>Provide some basic information about the individual shareholder.</p>
+                            <div className='task'>
+                                <p>Complete Task</p>
+                                <FontAwesomeIcon icon={faAngleRight} />
+                            </div>
+                        </div>
+                        <div className='box'>
+                            <h4>Puneet's Ownership</h4>
+                            <p>The number of shares Puneet will receive from Gigmo Solutions Inc.</p>
+                            <div className='task'>
+                                <p>Complete Task</p>
+                                <FontAwesomeIcon icon={faAngleRight} />
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>

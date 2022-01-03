@@ -1,3 +1,19 @@
 body{
-    font-family: 'Poppins', sans-serif;
+    font-family: acumin-pro,sans-serif!important;
+}
+
+/* Bootstrap */
+button, input, optgroup, select, textarea {
+    margin: 0;
+}
+
+.h2, h2{
+    font-size: inherit;
+}
+
+.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
+    margin-top: revert;
+    margin-bottom: revert;
+    font-weight: revert;
+    line-height: 1.2;
 }
