@@ -33,7 +33,6 @@ function Second() {
     }
 
     const handleSubmit = () => {
-        console.log('YES')
         // const item = document.getElementsByClassName('selected')[0].firstChild.textContent;
         localStorage.setItem('State', '1');
         console.log(localStorage.getItem('State'));
@@ -86,7 +85,7 @@ function Second() {
                         {loading ? <Loading /> : <ShowStates />}
                     </select> */}
 
-                {/* <div class="first_selector" id='1' onClick={() => select(1)}>
+                {/* <div className="first_selector" id='1' onClick={() => select(1)}>
                         <h1>Delaware  </h1>
                         <p>The gold standard for startups planning to raise capital. A majority of Fortune 500 companies are incorporated in Delaware.  </p>
 
@@ -95,10 +94,10 @@ function Second() {
                         <h1>Wyoming </h1>
                         <p>Companies due to low management costs, flexibility, and an easy to manage structure.   </p>
                     </div> */}
-                <div class="main">
+                <div className="main">
                     <form action="">
-                        <div class="select_main">
-                            <select class="all_input select_main">
+                        <div className="select_main">
+                            <select className="all_input select_main">
                                 <option value="AN">Andaman and Nicobar Islands</option>
                                 <option value="AP">Andhra Pradesh</option>
                                 <option value="AR">Arunachal Pradesh</option>
@@ -146,8 +145,8 @@ function Second() {
 
 
                     <div className="buttons_two">
-                        <div class="back_button">
-                            <NavLink to='/'><a href="#">&larr;Back</a></NavLink>
+                        <div className="back_button">
+                            <NavLink to='/'>&larr;Back</NavLink>
 
                         </div>
                         <div className="next_button">

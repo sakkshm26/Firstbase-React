@@ -43,14 +43,14 @@
     font-weight: 300;
     font-size: 21px;
     text-align: center;
-    margin: 10px 0;
+    margin: 0;
 }
 
 .fourteen .main-card .card-subtitle p{
     font-size: 14px;
     text-align: center;
     color: var(--text-light);
-    margin: 5px 0;
+    margin: 0;
 }
 
 .fourteen .card-content{
@@ -60,6 +60,10 @@
 
 .fourteen .form-header{
     font-size: 11px;
+}
+
+.fourteen .form-header p{
+    margin-top: 22px;
 }
 
 .fourteen .form-content span{
@@ -74,12 +78,17 @@
     font-size: 13px;
 }
 
-.fourteen .form-content .contact .col-1{
+.fourteen .form-content .column-1 p, .fourteen .form-content .column-2 p{
+    margin-top: 10px;
+    margin-bottom: 0;
+}
+
+.fourteen .form-content .contact .column-1{
     font-size: 12px;
     margin-right: 70px;
 }
 
-.fourteen .form-content .contact .col-2{
+.fourteen .form-content .contact .column-2{
     font-size: 12px;
 }
 
@@ -91,12 +100,12 @@
     font-size: 13px;
 }
 
-.fourteen .form-content .company .col-1{
+.fourteen .form-content .company .column-1{
     font-size: 12px;
     margin-right: 84px;
 }
 
-.fourteen .form-content .company .col-2{
+.fourteen .form-content .company .column-2{
     font-size: 12px;
 }
 
@@ -178,7 +187,7 @@
         flex-direction: column;
     }
 
-    .fourteen .form-content .contact .col-1{
+    .fourteen .form-content .contact .column-1{
         display: flex;
         justify-content: space-between;
         margin-right: 0;
@@ -189,13 +198,13 @@
         flex-direction: column;
     }
 
-    .fourteen .form-content .company .col-1{
+    .fourteen .form-content .company .column-1{
         display: flex;
         justify-content: space-between;
         margin-right: 0;
     }
 
-    .fourteen .form-content .contact .col-1 p, .fourteen .form-content .company .col-1 p{
+    .fourteen .form-content .contact .column-1 p, .fourteen .form-content .company .column-1 p{
         margin-bottom: 0;
     }
 

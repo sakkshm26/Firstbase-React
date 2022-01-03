@@ -1,24 +1,30 @@
 import React from 'react';
 import logo from '../../assets/firstbase.png';
-import './fourth2.css';
+import './five.css';
 import { NavLink } from 'react-router-dom';
 
-function Fourth2() {
+function Five() {
     return (
-        <div className='fourth2'>
-            <div class="container">
+        <div className='five'>
+            <div className="container">
                 <img src={logo} />
-                <div class="box">
+                <div className="box">
                     <div id="id">
-                        <h4>company details-Delware.llc</h4>
-                        <h2>choose a company name</h2>
+                        <div id="head">
+                            <h4>Company Details-</h4>
+                            <h5>
+                                Delware.llc
+                            </h5>
+                            <p>20%</p>
+                        </div>
+                        <h2>Choose a Company name</h2>
                         <h6>We'll check with the State of Delaware to see if your name is available.</h6>
                     </div>
                     {/* <h4>company details-Delware.llc</h4>
                     <h2>choose a company name</h2>
                     <h6>We'll check with the State of Delaware to see if your name is available.</h6>  */}
-                    <div class="box2">
-                        <div class="box3">
+                    <div className="box2">
+                        <div className="box3">
                             <form>
                                 <label>Company Name<span id="span">*
 
@@ -34,16 +40,16 @@ function Fourth2() {
                                 <input type="text" list="search" value={localStorage.getItem('CompanyType') ? localStorage.getItem('CompanyType') : ''} />
                                 <datalist id="search">
                                     {localStorage.getItem('CompanyType') ? localStorage.getItem('CompanyType') : <div>
-                                    <option value="LLC" />
-                                    <option value="L.L.C" />
-                                    <option value="limited libiality company" />
-                                    </div>}                        
+                                        <option value="LLC" />
+                                        <option value="L.L.C" />
+                                        <option value="limited libiality company" />
+                                    </div>}
                                 </datalist>
 
                             </form>
 
                         </div>
-                        <div class="box4">
+                        <div className="box4">
                             <h5>Tips for Choosing a Name</h5>
                             <ul>
                                 <li>
@@ -89,9 +95,9 @@ function Fourth2() {
 
 
 
-                    <div class="button1">
+                    <div className="button1">
 
-                        <NavLink to='/fourth'>&larr;back</NavLink>
+                        <NavLink to='/third'>&larr; Back</NavLink>
 
                         <NavLink className='next' to='/seven'>Next</NavLink>
 
@@ -106,4 +112,4 @@ function Fourth2() {
     )
 }
 
-export default Fourth2
+export default Five

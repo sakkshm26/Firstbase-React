@@ -27,11 +27,11 @@ function Fourteen() {
                                 <p>Fields marked with an asterisk (<span className='text-red'>*</span>) cannot be changed after payment. Please make sure the data is correct.</p>
                             </div>
                             <div className='contact'>
-                                <div className='col-1'>
+                                <div className='column-1'>
                                     <p>Contact Info</p>
                                     <p><span className='text-red'>Edit</span></p>
                                 </div>
-                                <div className='col-2'>
+                                <div className='column-2'>
                                     <p>Name: <span>Makarand Sunil Warade</span></p>
                                     <p>Email: <span>mkarandsunilwarade@gmail.com</span></p>                                   
                                     <p>Phone Number: <span>9999999999</span></p>                                   
@@ -39,11 +39,11 @@ function Fourteen() {
                                 </div>
                             </div>
                             <div className='company'>
-                                <div className='col-1'>
+                                <div className='column-1'>
                                     <p>Company</p>
                                     <p><span className='text-red'>Edit</span></p>
                                 </div>
-                                <div className='col-2'>
+                                <div className='column-2'>
                                     <p>Name: <span>Fanime LLC</span></p>
                                     <p>State: <span>Delaware</span></p>                                   
                                     <p>Address: <span>xyz</span></p>                                   
@@ -53,8 +53,8 @@ function Fourteen() {
                                 </div>
                             </div>
                             <div className='buttons'>
-                               <button className='back-button'><NavLink to='/'>&larr;Back</NavLink></button>
-                               <button className='next-button'><NavLink to='/'>Next</NavLink></button>
+                               <button className='back-button'><NavLink to='/thirteen'>&larr;Back</NavLink></button>
+                               <button className='next-button'><NavLink to='/dashboard'>Next</NavLink></button>
                             </div>
                         </div>
                     </form>

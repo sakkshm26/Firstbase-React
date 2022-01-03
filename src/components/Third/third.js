@@ -82,58 +82,58 @@ function Third() {
  */
     return (
         <div className='third'>
-            <div class="logo">
+            <div className="logo">
                 <img src={logo} alt="" />
             </div>
 
-            <div class="container">
+            <div className="container">
 
-                <div class="first_left">
-                    <div class="company_type flex">
+                <div className="first_left">
+                    <div className="company_type flex">
                         <p>Applicant Details</p>
                     </div>
-                    <div class="compmay_result">
+                    <div className="compmay_result">
                         <p> · Wyoming llc </p>
                     </div>
                 </div>
 
-                <div class="percentage flex">
+                <div className="percentage flex">
                     <p>50%</p>
                 </div>
 
-                <div class="company_heading">
+                <div className="company_heading">
                     <h2>Your Contact Information </h2>
                 </div>
-                <div class="compnay_subheading">
+                <div className="compnay_subheading">
                     <h3>We need your information in order to create a company in the U.S.   </h3>
                 </div>
 
-                <div class="main">
+                <div className="main">
                     <p id="lock"> <img id="lock_img" src={lock} alt="" /> We protect your personal information. Learn more about our <a id="none" href="">privacy policy. </a> </p>
                     <form id="form" action="/" onSubmit={handleSubmit} />
-                    <div class="first_main">
-                        <div class="first_name">
+                    <div className="first_main">
+                        <div className="first_name">
                             <h5>First Name<span id="star">*</span></h5>
-                            <input id="firstname" name="first" value={values.first} class="all_input" type="text" onChange={(e) => handleChange(e)} />
+                            <input id="firstname" name="first" value={values.first} className="all_input" type="text" onChange={(e) => handleChange(e)} />
                         </div>
-                        <div class="first_name">
+                        <div className="first_name">
                             <h5>Middle Name<span id="optional">(Optional)</span></h5>
-                            <input class="all_input" type="text" name='middle' value={values.middle} onChange={(e) => handleChange(e)} />
+                            <input className="all_input" type="text" name='middle' value={values.middle} onChange={(e) => handleChange(e)} />
 
                         </div>
-                        <div class="first_name">
+                        <div className="first_name">
                             <h5>Last Name<span id="star">*</span></h5>
-                            <input class="all_input" type="text" name='last' value={values.last} onChange={(e) => handleChange(e)} />
+                            <input className="all_input" type="text" name='last' value={values.last} onChange={(e) => handleChange(e)} />
                         </div>
 
                     </div>
-                    <section class="middle_para">
+                    <section className="middle_para">
                         <p>As printed on your government-issued ID, such as a driver’s license, a state-issued photo ID, or a passport.</p>
                     </section>
-                    <div class="second_main">
-                        <div class="first_name">
+                    <div className="second_main">
+                        <div className="first_name">
                             <p>Country of Residency<span id="star">*</span></p>
-                            <div class="select_main">
+                            <div className="select_main">
                                 <p className='all_input'>India</p>
                                 {/* <select class="all_input select_main" name='country' value={values.country} onChange={(e) => handleChange(e)}>
                         
@@ -380,29 +380,29 @@ function Third() {
                             </select> */}
                             </div>
                         </div>
-                        <div class="first_name" data-error="This field is required">
+                        <div className="first_name" data-error="This field is required">
                             <p>Email<span id="star">*</span></p>
-                            <input class="all_input icon" name='email' type="email" onChange={(e) => handleChange(e)} value={values.email} />
+                            <input className="all_input icon" name='email' type="email" onChange={(e) => handleChange(e)} value={values.email} />
                         </div>
 
-                        <div class="first_name">
+                        <div className="first_name">
                             <p>Phone Number<span id="star">*</span></p>
-                            <input class="all_input icon2" name='phone' type="text" onChange={(e) => handleChange(e)} value={values.phone} />
+                            <input className="all_input icon2" name='phone' type="text" onChange={(e) => handleChange(e)} value={values.phone} />
                         </div>
 
                     </div>
-                    <section class="middle_para base">
+                    <section className="middle_para base">
                         <p>What country do you live in? </p>
                     </section>
                 </div>
 
-                <div class="buttons_two">
-                    <div class="back_button">
-                        <NavLink to='/second' onClick={() => handleSubmit()}><a href="#">&larr;Back</a></NavLink>
+                <div className="buttons_two">
+                    <div className="back_button">
+                        <NavLink to='/second' onClick={() => handleSubmit()}>&larr;Back</NavLink>
 
                     </div>
-                    <div class="next_button">
-                        <NavLink to='/fourth' onClick={() => handleSubmit()}><button>Next</button></NavLink>
+                    <div className="next_button">
+                        <NavLink to='/five' onClick={() => handleSubmit()}><button>Next</button></NavLink>
                     </div>
                 </div>
 

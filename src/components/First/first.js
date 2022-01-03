@@ -39,7 +39,7 @@ function First() {
             data.map(company => {
                 let x = company.id;
                 return (
-                    <div id={company.id} className="first_selector" onClick={() => select(x)}>
+                    <div id={company.id} key={company.id} className="first_selector" onClick={() => select(x)}>
                         <h1>{company.name}</h1>
                         <p>{company.description}</p>
                     </div>
@@ -55,43 +55,43 @@ function First() {
 
     return (
         <div className='first'>
-            <div class="logo">
+            <div className="logo">
                 <img src={logo} alt="" />
             </div>
 
-            <div class="container">
+            <div className="container">
 
-                <div class="company_type flex">
+                <div className="company_type flex">
                     <p>Company Type</p>
                 </div>
 
-                <div class="percentage flex">
+                <div className="percentage flex">
                     <p>0%</p>
                 </div>
 
-                <div class="company_heading">
+                <div className="company_heading">
                     <h2>Select a Company Type  </h2>
                 </div>
-                <div class="compnay_subheading">
+                <div className="compnay_subheading">
                     <h3>What type of company is best for your business? </h3>
                 </div>
 
-                <div class="selectors">
+                <div className="selectors">
                     {loading ? <Loading /> : <ShowCompanies />}
-                    {/* <div class="first_selector">
+                    {/* <div className="first_selector">
                         <h1>LLC </h1>
                         <p>Companies organized under an Operating Agreement, a contract between members specifying how the business will operate and how expenses and profits will be split. </p>
                     </div> */}
-                    {/* <div class="second_selector">
+                    {/* <div className="second_selector">
                         <h1>C-Corporation </h1>
                         <p>Companies structured with the idea that control and ownership can be separate. Owners, called shareholders, may or may not be involved in the day-to-day operations.  </p>
                     </div> */}
-                    <div class="link">
+                    <div className="link">
                         <a href=""><p>Not sure which one?</p></a>
                     </div>
 
-                    <div class="buttons">
-                        <div class="next_button">
+                    <div className="buttons">
+                        <div className="next_button">
                             <NavLink to='/second' onClick={() => handleSubmit()}><button>Next</button></NavLink>
                         </div>
                     </div>
