@@ -45,10 +45,7 @@ function Thirteen() {
 
                     <div className="button1">
                         <NavLink to='/fourth'>&larr; back</NavLink>
-                        <NavLink to='/dashboard' className='next'>Next</NavLink>
-
-
-
+                        <NavLink to='/fourteen' className='next'>Next</NavLink>
                     </div>
 
 

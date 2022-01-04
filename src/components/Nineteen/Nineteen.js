@@ -19,9 +19,9 @@ function Nineteen() {
                     <div className="button1">
                   
                     <NavLink to='/fourteen'>Didnt received email ?</NavLink>
+                    <NavLink to='/dashboard'>Dashboard</NavLink>
 
                     </div>
-
 
                 </div>
             </div>

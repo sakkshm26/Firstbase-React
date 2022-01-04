@@ -60,17 +60,17 @@ function MyVerticallyCenteredModal(props) {
         </div>
         <div class="first_name">
           <h5>Email<span id="star">*</span></h5>
-          <input id="email" name="first" class="all_input" type="text" />
+          <input id="email" name="first" class="all_input" type="email" />
         </div>
         <div class="first_name">
           <h5>Confirm Email<span id="star">*</span></h5>
-          <input id="confirm_email" name="first" class="all_input" type="text" />
+          <input id="confirm_email" name="first" class="all_input" type="email" />
         </div>
         <div class="first_name">
           <h5>Password<span id="star">*</span></h5>
-          <input id="password" name="first" class="all_input" type="text" />
+          <input id="password" name="first" class="all_input" type="password" />
         </div>
-        <Button style={{color:'white'}}>  <NavLink to='/dashboard'>Signup</NavLink></Button>
+        <Button style={{color:'white'}}>  <NavLink to='/nineteen'>Signup</NavLink></Button>
       </Modal.Body>
     </Modal>
   );
