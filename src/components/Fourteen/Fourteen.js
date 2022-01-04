@@ -2,8 +2,11 @@ import React from 'react';
 import "./Fourteen.css";
 import logo from '../../assets/firstbase.png';
 import {NavLink} from 'react-router-dom';
+import{Button} from 'react-bootstrap';
+import MyVerticallyCenteredModal from '../../components/Fourteen/SignUpModal.js'
 
 function Fourteen() {
+    const [modalShow, setModalShow] = React.useState(false);
     return (
         <div className='fourteen'>
             <div className='logo'>
@@ -56,6 +59,14 @@ function Fourteen() {
                                <button className='back-button'><NavLink to='/thirteen'>&larr;Back</NavLink></button>
                                <button className='next-button'><NavLink to='/dashboard'>Next</NavLink></button>
                             </div>
+                            <Button variant="primary" onClick={() => setModalShow(true)}>
+        Launch vertically centered modal
+      </Button>
+
+      <MyVerticallyCenteredModal
+        show={modalShow}
+        onHide={() => setModalShow(false)}
+      />
                         </div>
                     </form>
                 </div>
