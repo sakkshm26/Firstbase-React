@@ -1,8 +1,8 @@
 import React from 'react';
 import "./Fourteen.css";
 import logo from '../../assets/firstbase.png';
-import {NavLink} from 'react-router-dom';
-import{Button} from 'react-bootstrap';
+import { NavLink } from 'react-router-dom';
+import { Button } from 'react-bootstrap';
 import MyVerticallyCenteredModal from '../../components/Fourteen/SignUpModal.js'
 
 function Fourteen() {
@@ -36,9 +36,9 @@ function Fourteen() {
                                 </div>
                                 <div className='column-2'>
                                     <p>Name: <span>Makarand Sunil Warade</span></p>
-                                    <p>Email: <span>mkarandsunilwarade@gmail.com</span></p>                                   
-                                    <p>Phone Number: <span>9999999999</span></p>                                   
-                                    <p>Residency: <span>India</span></p>                                   
+                                    <p>Email: <span>mkarandsunilwarade@gmail.com</span></p>
+                                    <p>Phone Number: <span>9999999999</span></p>
+                                    <p>Residency: <span>India</span></p>
                                 </div>
                             </div>
                             <div className='company'>
@@ -48,25 +48,29 @@ function Fourteen() {
                                 </div>
                                 <div className='column-2'>
                                     <p>Name: <span>Fanime LLC</span></p>
-                                    <p>State: <span>Delaware</span></p>                                   
-                                    <p>Address: <span>xyz</span></p>                                   
-                                    <p>Industry: <span>BTB Software</span></p>                                   
-                                    <p>Product Description: <span>xyz</span></p>                                   
-                                    <p>Business Description: <span>xyz</span></p>                                   
+                                    <p>State: <span>Delaware</span></p>
+                                    <p>Address: <span>xyz</span></p>
+                                    <p>Industry: <span>BTB Software</span></p>
+                                    <p>Product Description: <span>xyz</span></p>
+                                    <p>Business Description: <span>xyz</span></p>
                                 </div>
                             </div>
                             <div className='buttons'>
-                               <button className='back-button'><NavLink to='/thirteen'>&larr;Back</NavLink></button>
-                               <button className='next-button'><NavLink to='/dashboard'>Next</NavLink></button>
-                            </div>
-                            <Button variant="primary" onClick={() => setModalShow(true)}>
-        Launch vertically centered modal
-      </Button>
+                                <button className='back-button'><NavLink to='/thirteen'>&larr;Back</NavLink></button>
 
-      <MyVerticallyCenteredModal
-        show={modalShow}
-        onHide={() => setModalShow(false)}
-      />
+                                {/* <button className='next-button'><NavLink to='/dashboard'>Next</NavLink></button> */}
+
+
+                                <Button className='next-button' onClick={() => setModalShow(true)}>
+                                    Finish
+                                </Button>
+
+                            </div>
+
+                            <MyVerticallyCenteredModal
+                                show={modalShow}
+                                onHide={() => setModalShow(false)}
+                            />
                         </div>
                     </form>
                 </div>

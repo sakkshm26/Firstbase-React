@@ -1,32 +1,79 @@
 import React from 'react'
-import {Modal,Button} from 'react-bootstrap'
+import { Modal, Button, CloseButton,Nav } from 'react-bootstrap'
+import "./SignUpModal.css";
+import { firebase } from '../../config/firebase';
+// import { GoogleAuthProvider } from "firebase/auth";
+import { getAuth, getRedirectResult, signInWithRedirect, signInWithPopup, GoogleAuthProvider } from "firebase/auth";
+import { useEffect } from 'react/cjs/react.development';
+import { NavLink } from 'react-router-dom';
 
 function MyVerticallyCenteredModal(props) {
-    return (
-      <Modal
-        {...props}
-        size="lg"
-        aria-labelledby="contained-modal-title-vcenter"
-        centered
-      >
-        <Modal.Header closeButton>
-          <Modal.Title id="contained-modal-title-vcenter">
-            Modal heading
-          </Modal.Title>
-        </Modal.Header>
-        <Modal.Body>
-          <h4>Centered Modal</h4>
-          <p>
-            Cras mattis consectetur purus sit amet fermentum. Cras justo odio,
-            dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac
-            consectetur ac, vestibulum at eros.
-          </p>
-        </Modal.Body>
-        <Modal.Footer>
-          <Button onClick={props.onHide}>Close</Button>
-        </Modal.Footer>
-      </Modal>
-    );
+
+  const handleClick = () => {
+    const provider = new GoogleAuthProvider();
+    const auth = getAuth();
+    signInWithPopup(auth, provider)
+      .then((result) => {
+        // This gives you a Google Access Token. You can use it to access the Google API.
+        const credential = GoogleAuthProvider.credentialFromResult(result);
+        const token = credential.accessToken;
+        // The signed-in user info.
+        const user = result.user;
+        // ...
+        console.log(user)
+      }).catch((error) => {
+        // Handle Errors here.
+        const errorCode = error.code;
+        const errorMessage = error.message;
+        // The email of the user's account used.
+        const email = error.email;
+        // The AuthCredential type that was used.
+        const credential = GoogleAuthProvider.credentialFromError(error);
+        // ...
+      });
   }
+
+
+
+  return (
+    <Modal
+      {...props}
+
+      dialogClassName="modal-50w"
+      aria-labelledby="contained-modal-title-vcenter"
+      centered
+    >
+
+      <Modal.Body style={{ backgroundColor: 'black' }}>
+        <CloseButton closebutton variant="white" /><br></br>
+        <Button onClick={handleClick}>SignUp with Google</Button>
+        <br></br>
+        <div class="first_main">
+          <div class="first_name">
+            <h5>First Name<span id="star">*</span></h5>
+            <input id="first_name" name="first" class="all_input" type="text" />
+          </div>
+          <div class="first_name">
+            <h5>Last Name<span id="optional">(Optional)</span></h5>
+            <input id="last_name" name="middle" class="all_input" type="text" />
+          </div>
+        </div>
+        <div class="first_name">
+          <h5>Email<span id="star">*</span></h5>
+          <input id="email" name="first" class="all_input" type="text" />
+        </div>
+        <div class="first_name">
+          <h5>Confirm Email<span id="star">*</span></h5>
+          <input id="confirm_email" name="first" class="all_input" type="text" />
+        </div>
+        <div class="first_name">
+          <h5>Password<span id="star">*</span></h5>
+          <input id="password" name="first" class="all_input" type="text" />
+        </div>
+        <Button style={{color:'white'}}>  <NavLink to='/dashboard'>Signup</NavLink></Button>
+      </Modal.Body>
+    </Modal>
+  );
+}
 
 export default MyVerticallyCenteredModal

@@ -12,6 +12,7 @@ import Thirteen from './components/Thirteen/thirteen';
 import Fourteen from './components/Fourteen/Fourteen';
 import SignUp from './components/SignUp';
 import Dashboard from './components/Dashboard/Dashboard';
+import Nineteen from './components/Nineteen/Nineteen';
 
 function App() {
   return (
@@ -26,6 +27,7 @@ function App() {
         <Route exact path='/seven' element={<Seven />} />
         <Route exact path='/thirteen' element={<Thirteen />} />
         <Route exact path='/fourteen' element={<Fourteen />} />
+        <Route exact path='/nineteen' element={<Nineteen />} />
         <Route exact path='/dashboard' element={<Dashboard />} />
       </Routes>
       {/* <SignUp /> */}

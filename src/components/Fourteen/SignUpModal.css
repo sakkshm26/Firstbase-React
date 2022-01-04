@@ -1,0 +1,37 @@
+.all_input {
+
+    padding: 6px 50px 6px 5px;
+    border-radius: 8px;
+    border: none;
+    background-color: #302e2e;
+    color: white;
+    width: 100%;
+    font-size: 14px;
+
+}
+
+.first_main {
+    display: flex;
+    flex-direction: row;
+
+}
+
+.first_main h5 {
+    margin-bottom: 15px;
+
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.close {
+    color: #fff; 
+    opacity: 1;
+}
+
+a{
+    color: #fff;
+}
+
+a:hover{
+    color: #fff
+}
