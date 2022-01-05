@@ -61,7 +61,7 @@ function Third() {
         axios({
             method: 'post',
             // url: BASE_URL + 'juser/getinvolved',
-            url: 'http://3.110.143.87/index.php?r=jprimary/createcompany',
+            url: 'http://admin.businesssetup.in/index.php?r=jprimary/createcompany',
             data: bodyFormData,
         })
         .then((response) => {
@@ -399,7 +399,6 @@ function Third() {
                 <div className="buttons_two">
                     <div className="back_button">
                         <NavLink to='/second' onClick={() => handleSubmit()}>&larr;Back</NavLink>
-
                     </div>
                     <div className="next_button">
                         <NavLink to='/five' onClick={() => handleSubmit()}><button>Next</button></NavLink>
