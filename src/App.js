@@ -13,6 +13,8 @@ import Fourteen from './components/Fourteen/Fourteen';
 import SignUp from './components/SignUp';
 import Dashboard from './components/Dashboard/Dashboard';
 import Nineteen from './components/Nineteen/Nineteen';
+import Payment from './components/Payment';
+import Address from './components/Address/Address';
 
 function App() {
   return (
@@ -29,8 +31,10 @@ function App() {
         <Route exact path='/fourteen' element={<Fourteen />} />
         <Route exact path='/nineteen' element={<Nineteen />} />
         <Route exact path='/dashboard' element={<Dashboard />} />
+        <Route exact path='/payment' element={<Payment />} />
       </Routes>
       {/* <SignUp /> */}
+      {/* <Address /> */}
     </div>
   );
 }

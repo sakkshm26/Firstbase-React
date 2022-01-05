@@ -1,0 +1,1282 @@
+body{
+    margin:0;
+    padding:0;
+    font-family: acumin-pro,sans-serif;
+    background-color: black;
+    color:white;
+   width:100%;
+   height: 100%;
+}
+
+.address{
+    display: flex;
+    justify-content: center;
+}
+
+.address .container{
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    background-color:black;
+    
+    width: 700px;  
+    margin-top:85px;
+    margin-bottom: 10px;
+    
+    
+}
+.address .box3 input{
+    color:white;
+    padding-left: 5px;
+}
+.address .box h4{
+    padding-top: 2%;
+   font-size: 10px;
+   
+}
+.address .box h2{
+    margin-top: 5px;
+    font-weight: lighter;
+}
+.address .box h6{
+    margin-top:-15px ;
+    font-size: 13px;
+    color: rgb(165, 158, 158);
+    font-weight: lighter;
+}
+.address .box h4{
+   padding-left: 2%;
+   text-align: left;
+    
+    
+}
+.address .box{
+    background-color: #121212;
+    height: 570px;
+    padding-left: 2%;
+    padding-right: 2%;
+    padding-bottom: 2%;
+    
+    border-radius: 10px;
+    
+    
+}
+
+
+.address .box3 input{
+    width:18rem;
+    height: 32px;
+    border-radius: 10px;
+    background-color: #2c2c2c;
+}
+ 
+.address .box2{
+    padding-left: 2%;
+}
+.address .box3{
+    display:flex;
+   
+   
+
+}
+.address .box3 form{
+    text-align:left;
+   
+  }
+ .address .box3 label{
+     margin-left: 8%;
+     
+     
+ }
+#span{
+    color: red;
+}
+.address .box input{
+    margin-left:1vw;
+    margin-right: 0.5vw;
+}
+
+.address .box4{
+    text-align: left;
+}
+.address .box4 h5{
+    font-size: 10px;
+
+}
+.address .box4 li{
+    margin-top: -15px;
+}
+.address .box4 h6{
+    margin-top: -10px;
+    color: rgb(143, 133, 133);
+    font-size: 10px;
+}
+.address .box4 p{
+    font-size: 13px;
+}
+  
+.address .container img{
+    width: 18%;
+    padding-bottom: 10px;
+}
+.address #head{
+    display: flex;
+}
+.address #head P{
+    padding-left: 67%;
+    font-size: 12px;
+    padding-top: 12px;
+    color: #5a5a5e;
+}
+
+.address #head h4{
+        font-size: 12px;
+        font-weight: lighter;
+        color: #5a5a5e;
+}
+.address #head h5{
+    font-size: 11px;
+        font-weight: lighter;
+        padding-top: 11px;
+        padding-left: 2px;
+}
+.address .button1{
+    display: flex;
+   
+    margin-top: 20%;  
+   
+}
+.address .button1 p{
+    
+    
+    background-color:#121212;
+    color:#5a5a5e;
+    font-size: 15px;
+    font-weight: lighter;
+    margin-left: 2%;
+   margin-top: 30px; 
+    border: 1px solid #121212;
+ 
+    padding-left: 8px;
+    
+}
+.address .button1 h3{
+    border:1px solid black;
+    padding-left:5%;
+    padding-right: 5%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    border-radius: 8px;
+    font-weight:lighter;
+    font-size: 15px;
+    background-color: orangered;
+    color:white;
+    margin-left:70%;
+    margin-right: 2%;
+    
+
+    
+}
+
+
+
+ @media (max-width:1536px){
+    body{
+        margin:0;
+        padding:0;
+        font-family: acumin-pro,sans-serif;
+        background-color: black;
+        color:white;
+       width:100%;
+       height: 100%;
+    }
+    
+    .address .container{
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+        background-color:black;
+        
+        width: 700px;  
+        margin-top:70px;
+        margin-bottom: 10px;
+        
+        
+    }
+    .address .box h4{
+        padding-top: 2%;
+       font-size: 10px;
+    
+       
+    }
+    .address .box h2{
+        font-size: 21px;
+        margin-top: 5px;
+        font-weight: lighter;
+    }
+   
+    .address .box h6{
+        margin-top:-2px ;
+        font-size: 14px;
+        color: var(--text-light);
+        font-weight: lighter;
+    }
+    .address .box h4{
+       padding-left: 2%;
+       text-align: left;
+        
+        
+    }
+    .address .box{
+        background-color: #121212;
+        height: 550px;
+        padding-left: 1%;
+        padding-right: 2%;
+        padding-bottom: 6%;
+        border-radius: 10px;      
+    }
+    .address #head{
+        display: flex;
+    }
+    .address #head P{
+        padding-left: 67%;
+        font-size: 12px;
+        padding-top: 12px;
+        color: #5a5a5e;
+    }
+    .address #head h4{
+            font-size: 12px;
+            font-weight: lighter;
+            color: #5a5a5e;
+    }
+    .address #head h5{
+        font-size: 11px;
+            font-weight: lighter;
+            padding-top: 11px;
+            padding-left: 2px;
+    }
+    
+    
+    .address .box3 input{
+        width: 300px;
+        height: 32px;
+        border-radius: 10px;
+        background-color: #2c2c2c;
+    }
+     
+    .address .box2{
+        padding-left: 2%;
+    }
+    .address .box3{
+        display:flex;
+
+    
+    }
+     .address .box3 form{
+       text-align:left;
+      
+     }
+    .address .box3 label{
+        margin-left: 15px;
+        margin-bottom: 10px;     
+    }
+    #span{
+        color: red;
+    }
+    .address .box input{
+        margin-left: 1vw;
+        margin-right: 0.5vw;
+        border: none;
+        border-radius: 8px;
+    }
+    
+    .address .box4{
+        text-align: left;
+    }
+    .address .box4 h5{
+        font-size: 10px;
+
+    }
+    .address .box4 li{
+        margin-top: -15px;
+    }
+    .address .box4 h6{
+        margin-top: -10px;
+        color: rgb(143, 133, 133);
+        font-size: 10px;
+    }
+    .address .box4 p{
+        font-size: 13px;
+    }
+   
+    .address .container img{
+        width: 18%;
+        padding-bottom: 10px;
+    }
+   
+    
+    .address .button1{
+        display: flex;
+       
+        margin-top: 20%;  
+       
+    }
+    .address .button1 p{
+        
+        
+        background-color:#121212;
+        color:#5a5a5e;
+        font-size: 15px;
+        font-weight: lighter;
+        margin-left: 2%;
+       margin-top: 30px; 
+        border: 1px solid #121212;
+     
+        padding-left: 8px;
+        
+    }
+    .address .button1 h3{
+        border:1px solid black;
+        padding-left:5%;
+        padding-right: 5%;
+        padding-top: 2%;
+        padding-bottom: 2%;
+        border-radius: 8px;
+        font-weight:lighter;
+        font-size: 15px;
+        background-color: orangered;
+        color:white;
+        margin-left:70%;
+        margin-right: 2%;
+        
+    
+        
+    }
+}
+@media (min-width:612px) and (max-width:835px){
+
+    body{
+    margin:0;
+    padding:0;
+    font-family: acumin-pro,sans-serif;
+    background-color: black;
+    color:white;
+   width:100%;
+   height: 100%;
+   display: flex;
+   justify-content: center;
+}
+
+.address .container{
+    text-align: center;
+    background-color:black;
+    
+    width: 92%;  
+    margin-top:4%;
+    
+    
+}
+.address .box h4{
+    padding-top: 2%;
+   font-size: 10px;
+   
+}
+.address #head{
+    display: flex;
+}
+.address #head P{
+    padding-left: 67%;
+    font-size: 12px;
+    padding-top: 12px;
+    color: #5a5a5e;
+}
+.address #head h4{
+        font-size: 12px;
+        font-weight: lighter;
+        color: #5a5a5e;
+}
+.address #head h5{
+    font-size: 11px;
+        font-weight: lighter;
+        padding-top: 11px;
+        padding-left: 2px;
+}
+
+.address .box h2{
+    margin-top: 5px;
+    text-align: left;
+}
+.address .box h6{
+    margin-top:-15px ;
+    font-size: 13px;
+    color: rgb(165, 158, 158);
+    text-align: left;
+}
+.address .box h4{
+   padding-left: 2%;
+   text-align: left;
+    
+    
+}
+#id{
+    background-color: black;
+    margin-left: -2%;
+    padding-right: 30px;
+    padding-left: 10px;
+    padding-bottom: 5px;
+   
+    width: 100%;
+}
+.address .box {
+    background-color: black;
+    padding-left: 20px;
+}
+
+
+.address .box3 input{
+    width: 82Vw;
+    height: 3.5vh;
+    border-radius: 10px;
+    background-color: rgb(63, 60, 57);
+}
+ 
+.address .box2{
+    padding-left: 2%;
+    padding-top: 2%;
+    border-radius:10px;
+    background-color: #121212;
+    padding-bottom: 2%;
+}
+.address .box3{
+    text-align: left;
+    display: block;
+    
+}
+
+.address .box3 label{
+    margin-left: 1%;
+}
+#span{
+    color: red;
+}
+.address .box input{
+    margin-left:1vw;
+    margin-right: 0.5vw;
+}
+
+.address .box4{
+    text-align: left;
+}
+.address .box4 h5{
+    font-size: 13px;
+}
+.address .box4 li{
+    margin-top: -15px;
+}
+.address .box4 h6{
+    margin-top: -10px;
+    color: rgb(143, 133, 133);
+    font-size: 10px;
+}
+.address .box4 p{
+    font-size: 12px;
+}
+  
+.address .container img{
+    width: 20%;
+}
+
+.address .button1{
+    display: flex;
+    background-color: #121212; 
+    margin-top:16.5vh; 
+    margin-right: -5.8vw;
+    margin-left: -8vw;
+    padding-left: 1vw;
+    position:sticky;
+    bottom: 0px;  
+}
+.address .button1 p{
+        
+        
+    background-color:#2a2a2c;
+    color:white;
+    font-size: 15px;
+    font-weight: lighter;
+    margin-left: 25px;
+    margin-top: 30px; 
+    border: 1px solid #121212;
+    padding-left:20px;
+    padding-right: 20px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    border-radius: 8px;
+    
+    
+}
+.address .button1 h3{
+    border:1px solid black;
+    padding-left:30px;
+    padding-right: 30px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    border-radius: 8px;
+    font-weight:lighter;
+    font-size: 15px;
+    background-color: orangered;
+    color:white;
+    margin-left:auto;
+    margin-right: 25px;
+    margin-top: 30px; 
+    
+    
+
+    
+}
+
+}
+@media (min-width:350px) and (max-width:612px){
+    body{
+        margin:0;
+        padding:0;
+        font-family: acumin-pro,sans-serif;
+        background-color: black;
+        color:white;
+       width:100%;
+       height: 100%;
+       display: flex;
+       justify-content: center;
+    }
+    
+    .address .container{
+        text-align: center;
+        background-color:black;
+        
+        width: 92%;  
+        margin-top:4%;
+        
+        
+    }
+    .address #head{
+        display: flex;
+    }
+    .address #head P{
+        padding-left: 60%;
+        font-size: 12px;
+        padding-top: 12px;
+        color: #5a5a5e;
+    }
+    .address #head h4{
+            font-size: 12px;
+            font-weight: lighter;
+            color: #5a5a5e;
+    }
+    .address #head h5{
+        font-size: 11px;
+            font-weight: lighter;
+            padding-top: 8px;
+            padding-left: 2px;
+    }
+    .address .box h4{
+        padding-top: 2%;
+       font-size: 10px;
+       
+    }
+    
+    .address .box h2{
+        margin-top: 5px;
+        text-align: left;
+    }
+    .address .box h6{
+        margin-top:-15px ;
+        font-size: 13px;
+        color: rgb(165, 158, 158);
+        text-align: left;
+    }
+    .address .box h4{
+       padding-left: 2%;
+       text-align: left;
+        
+        
+    }
+    #id{
+        background-color: black;
+        margin-left: -2%;
+        padding-right: 30px;
+        padding-left: 10px;
+        padding-bottom: 5px;
+       
+        width: 100%;
+    }
+    
+    
+    
+    .address .box3 input{
+        width: 82Vw;
+        height: 3.5vh;
+        border-radius: 10px;
+        background-color: rgb(63, 60, 57);
+    }
+     
+    .address .box2{
+        padding-left: 2%;
+        padding-top: 2%;
+        border-radius:10px;
+        background-color: #121212;
+        
+    }
+    .address .box3{
+        text-align: left;
+        display: block;
+        
+    }
+    
+    .address .box3 label{
+        margin-left: 1%;
+    }
+    #span{
+        color: red;
+    }
+    .address .box input{
+        margin-left:1vw;
+        margin-right: 0.5vw;
+    }
+    .address .box{
+        background-color: black;
+        height: 120vh;
+    }
+    
+    .address .box4{
+        text-align: left;
+    }
+    .address .box4 h5{
+        font-size: 13px;
+    }
+    .address .box4 li{
+        margin-top: -15px;
+    }
+    .address .box4 h6{
+        margin-top: -10px;
+        color: rgb(143, 133, 133);
+        font-size: 10px;
+    }
+    .address .box4 p{
+        font-size: 12px;
+    }
+      
+    .address .container img{
+        width: 30%;
+    }
+    .address .button1 p{
+        
+        
+        background-color:#2a2a2c;
+        color:white;
+        font-size: 15px;
+        font-weight: lighter;
+        margin-left: 25px;
+        margin-top: 30px; 
+        border: 1px solid #121212;
+        padding-left:20px;
+        padding-right: 20px;
+        padding-top: 16px;
+        padding-bottom: 16px;
+        border-radius: 8px;
+        
+        
+    }
+    .address .button1 h3{
+        border:1px solid black;
+        padding-left:30px;
+        padding-right: 30px;
+        padding-top: 16px;
+        padding-bottom: 16px;
+        border-radius: 8px;
+        font-weight:lighter;
+        font-size: 15px;
+        background-color: orangered;
+        color:white;
+        margin-left:auto;
+        margin-right: 25px;
+        margin-top: 30px; 
+        
+        
+    
+        
+    }
+    .address .button1{
+        display: flex;
+        background-color: #121212; 
+        margin-top:16.5vh; 
+        margin-right: -9vw;
+        margin-left: -8vw;
+        padding-left: 1vw;
+        
+        position:sticky;
+        bottom: 0px;  
+    }
+    
+}
+@media  (max-width:350px){
+    body{
+        margin:0;
+        padding:0;
+        font-family: acumin-pro,sans-serif;
+        background-color: black;
+        color:white;
+       width:100%;
+       height: 100%;
+       display: flex;
+       justify-content: center;
+    }
+    
+    .address .container{
+        text-align: center;
+        background-color:black;
+        
+        width: 92%;  
+        margin-top:4%;
+        
+        
+    }
+    .address #head{
+        display: flex;
+    }
+    .address #head P{
+        padding-left: 45%;
+        font-size: 12px;
+        padding-top: 12px;
+        color: #5a5a5e;
+    }
+    .address #head h4{
+            font-size: 12px;
+            font-weight: lighter;
+            color: #5a5a5e;
+    }
+    .address #head h5{
+        font-size: 11px;
+            font-weight: lighter;
+            padding-top: 6px;
+            padding-left: 2px;
+    }
+    .address .box h4{
+        padding-top: 2%;
+       font-size: 10px;
+       
+    }
+    
+    .address .box h2{
+        margin-top: 5px;
+        text-align: left;
+    }
+    .address .box h6{
+        margin-top:-15px ;
+        font-size: 13px;
+        color: rgb(165, 158, 158);
+        text-align: left;
+    }
+    .address .box h4{
+       padding-left: 2%;
+       text-align: left;
+        
+        
+    }
+    #id{
+        background-color: black;
+        margin-left: -2%;
+        padding-right: 30px;
+        padding-left: 10px;
+        padding-bottom: 5px;
+       
+        width: 100%;
+    }
+    
+    
+    
+    .address .box3 input{
+        width: 82Vw;
+        height: 3.5vh;
+        border-radius: 10px;
+        background-color: rgb(63, 60, 57);
+    }
+     
+    .address .box2{
+        padding-left: 2%;
+        padding-top: 2%;
+        border-radius:10px;
+        background-color: #121212;
+        
+    }
+    .address .box3{
+        text-align: left;
+        display: block;
+        
+    }
+    
+    .address .box3 label{
+        margin-left: 1%;
+    }
+    #span{
+        color: red;
+    }
+    .address .box input{
+        margin-left:1vw;
+        margin-right: 0.5vw;
+    }
+    .address .box{
+        background-color: black;
+        height: 130vh;
+    }
+    
+    .address .box4{
+        text-align: left;
+    }
+    .address .box4 h5{
+        font-size: 13px;
+    }
+    .address .box4 li{
+        margin-top: -15px;
+    }
+    .address .box4 h6{
+        margin-top: -10px;
+        color: rgb(143, 133, 133);
+        font-size: 10px;
+    }
+    .address .box4 p{
+        font-size: 12px;
+    }
+      
+    .address .container img{
+        width: 60%;
+    }
+    
+    .address .button1 p{
+        
+        
+        background-color:#2a2a2c;
+        color:white;
+        font-size: 15px;
+        font-weight: lighter;
+        margin-left: 25px;
+        margin-top: 30px; 
+        border: 1px solid #121212;
+        padding-left:20px;
+        padding-right: 20px;
+        padding-top: 16px;
+        padding-bottom: 16px;
+        border-radius: 8px;
+        
+        
+    }
+    .address .button1 h3{
+        border:1px solid black;
+        padding-left:30px;
+        padding-right: 30px;
+        padding-top: 16px;
+        padding-bottom: 16px;
+        border-radius: 8px;
+        font-weight:lighter;
+        font-size: 15px;
+        background-color: orangered;
+        color:white;
+        margin-left:auto;
+        margin-right: 25px;
+        margin-top: 30px; 
+        
+        
+    
+        
+    }
+    .address .button1{
+        display: flex;
+        background-color: #121212; 
+        margin-top:16.5vh; 
+        margin-right: -12vw;
+        margin-left: -8vw;
+        padding-left: 1vw;
+        
+        position:sticky;
+        bottom: 0px;  
+    }
+    
+}
+    
+       
+    
+@media (max-width:250px){
+    body{
+        margin:0;
+        padding:0;
+        font-family: acumin-pro,sans-serif;
+        background-color: black;
+        color:white;
+       width:100%;
+       height: 100%;
+       display: flex;
+       justify-content: center;
+    }
+    
+    .address .container{
+        text-align: center;
+        background-color:black;
+        
+        width: 92%;  
+        margin-top:4%;
+        
+        
+    }
+    .address #head{
+        display: flex;
+    }
+    .address #head P{
+        padding-left: 30%;
+        font-size: 12px;
+        padding-top: 12px;
+        color: #5a5a5e;
+    }
+    .address #head h4{
+            font-size: 12px;
+            font-weight: lighter;
+            color: #5a5a5e;
+    }
+    .address #head h5{
+        font-size: 11px;
+            font-weight: lighter;
+            padding-top: 4px;
+            padding-left: 2px;
+    }
+    .address .box h4{
+        padding-top: 2%;
+       font-size: 10px;
+       
+    }
+    
+    .address .box h2{
+        margin-top: 5px;
+        text-align: left;
+    }
+    .address .box h6{
+        margin-top:-15px ;
+        font-size: 13px;
+        color: rgb(165, 158, 158);
+        text-align: left;
+    }
+    .address .box h4{
+       padding-left: 2%;
+       text-align: left;
+        
+        
+    }
+    #id{
+        background-color: black;
+        margin-left: -2%;
+        padding-right: 30px;
+        padding-left: 10px;
+        padding-bottom: 5px;
+       
+        width: 100%;
+    }
+    
+    
+    
+    .address .box3 input{
+        width: 82Vw;
+        height: 3.5vh;
+        border-radius: 10px;
+        background-color: rgb(63, 60, 57);
+    }
+     
+    .address .box2{
+        padding-left: 2%;
+        padding-top: 2%;
+        border-radius:10px;
+        background-color: #121212;
+        
+    }
+    .address .box3{
+        text-align: left;
+        display: block;
+        
+    }
+    
+    .address .box3 label{
+        margin-left: 1%;
+    }
+    #span{
+        color: red;
+    }
+    .address .box input{
+        margin-left:1vw;
+        margin-right: 0.5vw;
+    }
+    .address .box{
+        background-color: black;
+        height: 170vh;
+    }
+    
+    .address .box4{
+        text-align: left;
+    }
+    .address .box4 h5{
+        font-size: 13px;
+    }
+    .address .box4 li{
+        margin-top: -15px;
+    }
+    .address .box4 h6{
+        margin-top: -10px;
+        color: rgb(143, 133, 133);
+        font-size: 10px;
+    }
+    .address .box4 p{
+        font-size: 12px;
+    }
+      
+    .address .container img{
+        width: 70%;
+    }
+    .address .button1 p{
+        
+        
+        background-color:#2a2a2c;
+        color:white;
+        font-size: 15px;
+        font-weight: lighter;
+        margin-left: 25px;
+        margin-top: 30px; 
+        border: 1px solid #121212;
+        padding-left:20px;
+        padding-right: 20px;
+        padding-top: 16px;
+        padding-bottom: 16px;
+        border-radius: 8px;
+        
+        
+    }
+    .address .button1 h3{
+        border:1px solid black;
+        padding-left:30px;
+        padding-right: 30px;
+        padding-top: 16px;
+        padding-bottom: 16px;
+        border-radius: 8px;
+        font-weight:lighter;
+        font-size: 15px;
+        background-color: orangered;
+        color:white;
+        margin-left:auto;
+        margin-right: 25px;
+        margin-top: 30px; 
+        
+        
+    
+        
+    }
+    .address .button1{
+        display: flex;
+        background-color: #121212; 
+        margin-top:16.5vh; 
+        margin-right: -15vw;
+        margin-left: -8vw;
+        padding-left: 1vw;
+        
+        position:sticky;
+        bottom: 0px;  
+    }
+    
+        
+        
+    
+        
+     
+}
+@media (max-width:215px){
+    body{
+        margin:0;
+        padding:0;
+        font-family: acumin-pro,sans-serif;
+        background-color: black;
+        color:white;
+       width:100%;
+       height: 100%;
+       display: flex;
+       justify-content: center;
+    }
+    
+    .address .container{
+        text-align: center;
+        background-color:black;
+        
+        width: 92%;  
+        margin-top:4%;
+        
+        
+    }
+    .address .box h4{
+        padding-top: 2%;
+       font-size: 10px;
+       
+    }
+    
+    .address .box h2{
+        margin-top: 5px;
+        text-align: left;
+    }
+    .address .box h6{
+        margin-top:-15px ;
+        font-size: 13px;
+        color: rgb(165, 158, 158);
+        text-align: left;
+    }
+    .address .box h4{
+       padding-left: 2%;
+       text-align: left;
+        
+        
+    }
+    #id{
+        background-color: black;
+        margin-left: -2%;
+        padding-right: 30px;
+        padding-left: 10px;
+        padding-bottom: 5px;
+       
+        width: 100%;
+    }
+    
+    
+    
+    .address .box3 input{
+        width: 82Vw;
+        height: 3.5vh;
+        border-radius: 10px;
+        background-color: rgb(63, 60, 57);
+    }
+     
+    .address .box2{
+        padding-left: 2%;
+        padding-top: 2%;
+        border-radius:10px;
+        background-color: #121212;
+        
+    }
+    .address .box3{
+        text-align: left;
+        display: block;
+        
+    }
+    
+    .address .box3 label{
+        margin-left: 1%;
+    }
+    #span{
+        color: red;
+    }
+    .address .box input{
+        margin-left:1vw;
+        margin-right: 0.5vw;
+    }
+    .address .box{
+        background-color: #121212;
+        height: 150vh;
+    }
+    
+    .address .box4{
+        text-align: left;
+    }
+    .address .box4 h5{
+        font-size: 13px;
+    }
+    .address .box4 li{
+        margin-top: -15px;
+    }
+    .address .box4 h6{
+        margin-top: -10px;
+        color: rgb(143, 133, 133);
+        font-size: 10px;
+    }
+    .address .box4 p{
+        font-size: 12px;
+    }
+      
+    .address .container img{
+        width: 70%;
+    }
+    .address #head{
+        display: flex;
+    }
+    .address #head P{
+        padding-left: 10%;
+        font-size: 12px;
+        padding-top: 12px;
+        color: #5a5a5e;
+    }
+    .address #head h4{
+            font-size: 12px;
+            font-weight: lighter;
+            color: #5a5a5e;
+    }
+    .address #head h5{
+        font-size: 11px;
+            font-weight: lighter;
+            padding-top: 2px;
+            padding-left: 2px;
+    }
+    .address .button1 p{
+        
+        
+        background-color:#2a2a2c;
+        color:white;
+        font-size: 15px;
+        font-weight: lighter;
+        margin-left: 40px;
+        margin-top: 30px; 
+        margin-right: 40px;
+        border: 1px solid #121212;
+        padding-left:20px;
+        padding-right: 20px;
+        padding-top: 16px;
+        padding-bottom: 16px;
+        border-radius: 8px;
+        
+        
+    }
+    .address .button1 h3{
+        border:1px solid black;
+        padding-left:30px;
+        padding-right: 30px;
+        padding-top: 16px;
+        padding-bottom: 16px;
+        border-radius: 8px;
+        font-weight:lighter;
+        font-size: 15px;
+        background-color: orangered;
+        color:white;
+        margin-left:40px;
+        margin-right: 40px;
+        margin-top: 30px; 
+        
+        
+    
+        
+    }
+    .address .button1{
+        display:inline-block;
+        background-color:#121212; 
+        margin-top:16.5vh; 
+        
+        padding-left: 1vw;
+        width: 130%;
+        
+        position:sticky;
+        bottom: 0px;  
+    }
+    
+}
+    
+       
+    
+    
+       
+     
+    

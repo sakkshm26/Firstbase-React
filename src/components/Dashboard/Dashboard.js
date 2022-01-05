@@ -4,6 +4,7 @@ import logo from '../../assets/firstbase.png';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faPlus, faQuestion, faCog, faAngleDown, faSignOutAlt, faExclamationCircle, faAngleRight } from '@fortawesome/free-solid-svg-icons';
 import { Navbar, Container, Nav, NavDropdown, FormControl, Button, Offcanvas } from 'react-bootstrap';
+import {NavLink} from 'react-router-dom';
 
 function Dashboard() {
     return (
@@ -164,6 +165,9 @@ function Dashboard() {
                                 <FontAwesomeIcon icon={faAngleRight} />
                             </div>
                         </div>
+                    </div>
+                    <div className='finish-app'>
+                        <NavLink to='/payment'><button>Finish Application</button></NavLink>
                     </div>
                 </div>
             </div>

@@ -134,12 +134,14 @@
 }
 
 .dashboard .main-view{
+    margin: 20px 0;
     padding: 0 30px;
 }
 
 .dashboard .main-view h3{
     font-size: 21px;
     font-weight: 300;
+    margin-bottom: 20px;
 }
 
 .dashboard .main-view span{
@@ -201,6 +203,7 @@
 
 .dashboard .warning p{
     margin-left: 20px;
+    margin-top: inherit;
 }
 
 .dashboard .company-details{
@@ -223,7 +226,7 @@
 .dashboard .company-details .box h4{
     font-weight: lighter;
     font-size: 15px;
-    margin-top: 25px;
+    margin-top: 20px;
     margin-bottom: 15px;
 }
 
@@ -243,6 +246,15 @@
 
 .dashboard .company-details .box .task p{
     color: #ff453b;
+}
+
+.dashboard .finish-app button{
+    margin: 25px 9px;
+    padding: 10px 15px;
+    border-radius: 8px;
+    border: none;
+    background-color: orangered;
+    color: white;
 }
 
 @media screen and (max-width: 840px) {
