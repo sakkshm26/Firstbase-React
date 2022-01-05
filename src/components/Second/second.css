@@ -168,6 +168,16 @@ line-height: 18px;
     z-index: 1;
 
 }
+
+.box3 input{
+    width: auto;
+    height: 28px;
+    color: white;
+    background-color: rgb(0, 0, 0);
+
+}
+
+
 .second .select_main{
     width: 197px;
     /* overflow: hidden; */

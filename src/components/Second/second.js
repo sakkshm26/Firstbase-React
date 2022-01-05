@@ -3,38 +3,50 @@ import './second.css';
 import logo from '../../assets/firstbase.png';
 import { NavLink } from 'react-router-dom';
 import Loading from '../loading';
+import axios from 'axios';
 
 function Second() {
 
-    const [loading, setLoading] = useState(false);
+    const [data, setData] = useState([]);
 
-    const data = [
-        { "id": 1, "name": "Delhi" },
-        { "id": 2, "name": "Punjab" },
-        { "id": 3, "name": "Kerala" }
-    ];
+    useEffect(() => {
 
-    const ShowStates = () => {
-        return (
-            data.map(state => {
-                return (
-                    <option id={state.id}>{state.name}</option>
-                )
-            })
-        )
-    }
+        if (data.length === 0)
+            axios.get('https://admin.businesssetup.in/index.php?r=jprimary/allstates').then(response => {
+                setData(response.data.states);
+                console.log(response.data.states)
+            }).catch('Error');
+    })
 
-    const select = (id) => {
-        const item = document.getElementsByClassName('selected')[0];
-        if (item != undefined) {
-            item.classList.remove('selected');
-        }
-        document.getElementById(`${id}`).classList.add('selected');
-    }
+    // const [loading, setLoading] = useState(false);
+
+    // const data = [
+    //     { "id": 1, "name": "Delhi" },
+    //     { "id": 2, "name": "Punjab" },
+    //     { "id": 3, "name": "Kerala" }
+    // ];
+
+    // const ShowStates = () => {
+    //     return (
+    //         data.map(state => {
+    //             return (
+    //                 <option id={state.id}>{state.name}</option>
+    //             )
+    //         })
+    //     )
+    // }
+
+    // const select = (id) => {
+    //     const item = document.getElementsByClassName('selected')[0];
+    //     if (item != undefined) {
+    //         item.classList.remove('selected');
+    //     }
+    //     document.getElementById(`${id}`).classList.add('selected');
+    // }
 
     const handleSubmit = () => {
         // const item = document.getElementsByClassName('selected')[0].firstChild.textContent;
-        localStorage.setItem('State', '1');
+        localStorage.setItem('State', '3');
         console.log(localStorage.getItem('State'));
         /* try{
             console.log('YES')
@@ -45,15 +57,16 @@ function Second() {
             console.log(error);
         } */
     }
+    // useEffect(() => {
+    //     axios.get('https://admin.businesssetup.in/index.php?r=jprimary/allstates').then(response => {
+    //         const item = response.data.all_states;
+    //         setData(item);
+    //         console.log(response.all_states);
+    //         // setLoading(false);
+    //     }).catch('Error');
+    // }, []) 
 
-    /* useEffect(() => {
-        axios.get('https://admin.businesssetup.in/index.php?r=jprimary/allcompanytypes').then(response => {
-            const item = response.data.company_types;
-            setData(item);
-            // console.log(response.data.com);
-            setLoading(false);
-        }).catch('Error');
-    }, []) */
+
 
     return (
         <div className='second'>
@@ -97,8 +110,15 @@ function Second() {
                 <div className="main">
                     <form action="">
                         <div className="select_main">
-                            <select className="all_input select_main">
-                                <option value="AN">Andaman and Nicobar Islands</option>
+                            {/* <select className="all_input select_main">
+                                    {
+                                        data.map((states, index) =>
+                                            <option key={index} value={states.name} />
+                                        )
+                                    } */}
+
+
+                            {/* <option value="AN">Andaman and Nicobar Islands</option>
                                 <option value="AP">Andhra Pradesh</option>
                                 <option value="AR">Arunachal Pradesh</option>
                                 <option value="AS">Assam</option>
@@ -135,8 +155,22 @@ function Second() {
                                 <option value="UP">Uttar Pradesh</option>
                                 <option value="UT">Uttarakhand</option>
                                 <option value="WB">West Bengal</option>
-                            </select>
-                        </div>
+                            </select> */}
+                            {/* <div className="all_input select_main"> */}
+                                <div className="box3 mt-3">
+                                <input type="text" list="search" />
+                                <datalist id="search">
+
+                                    {
+                                        data.map((states, index) =>
+                                            <option key={index} value={states.name} />
+                                        )
+                                    }
+
+                                </datalist>
+                                </div>
+                            {/* </div> */}
+                            </div>
                     </form>
 
                     <div className="link">

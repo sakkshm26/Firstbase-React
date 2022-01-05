@@ -10,16 +10,16 @@ body{
 
 .main_box{
  
-    width:1000px;
+ 
     overflow-y: auto;
     height: 100px;
-    width: 390px;
+    width: auto;
     height: 400px;
     padding: 33px;
     background-color: #121212;
-    border: 1px solid #1c1c1e;
+    border: 1px solid #121212;
     border-radius: 8px;
-    margin: 0 auto; 
+ 
     font-family: 'Poppins', sans-serif;
     line-height: 18px;
     
@@ -201,7 +201,6 @@ a{
 
 
 
-
 @media only screen and (max-width: 830px)
 {
     .second_part{
@@ -249,4 +248,16 @@ a{
 } 
 @media only screen and (max-width: 360px){
 
+}
+
+.modal-content {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    pointer-events: auto;
+    background-clip: padding-box;
+    border: 1px solid rgba(0,0,0,.2);
+    border-radius: 0.3rem;
+    outline: 0;
 }
