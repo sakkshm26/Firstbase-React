@@ -61,7 +61,7 @@ function Third() {
         axios({
             method: 'post',
             // url: BASE_URL + 'juser/getinvolved',
-            url: 'http://admin.businesssetup.in/index.php?r=jprimary/createcompany',
+            url: 'https://admin.businesssetup.in/index.php?r=jprimary/createcompany',
             data: bodyFormData,
         })
         .then((response) => {

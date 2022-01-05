@@ -11,7 +11,7 @@ const Seven = () => {
     useEffect(() => {
 
         if (data.length === 0)
-            axios.get('http://admin.businesssetup.in/index.php?r=jprimary/allindustry').then(response => {
+            axios.get('https://admin.businesssetup.in/index.php?r=jprimary/allindustry').then(response => {
                 setData(response.data.industries);
                 console.log(response.data.industries)
             }).catch('Error');

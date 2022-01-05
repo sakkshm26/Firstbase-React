@@ -49,7 +49,7 @@ function Fourth() {
 
         axios({
             method: 'post',
-            url: 'http://admin.businesssetup.in/index.php?r=jprimary/createshareholder',
+            url: 'https://admin.businesssetup.in/index.php?r=jprimary/createshareholder',
             data: bodyFormData,
         })
             .then((response) => {

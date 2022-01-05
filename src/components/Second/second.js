@@ -47,7 +47,7 @@ function Second() {
     }
 
     /* useEffect(() => {
-        axios.get('http://admin.businesssetup.in/index.php?r=jprimary/allcompanytypes').then(response => {
+        axios.get('https://admin.businesssetup.in/index.php?r=jprimary/allcompanytypes').then(response => {
             const item = response.data.company_types;
             setData(item);
             // console.log(response.data.com);
