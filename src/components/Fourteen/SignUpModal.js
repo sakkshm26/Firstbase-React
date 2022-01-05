@@ -6,6 +6,7 @@ import { firebase } from '../../config/firebase';
 import { getAuth, getRedirectResult, signInWithRedirect, signInWithPopup, GoogleAuthProvider } from "firebase/auth";
 import { useEffect } from 'react/cjs/react.development';
 import { NavLink } from 'react-router-dom';
+import GoogleIcon from '../../assets/googleicon.png'
 
 function MyVerticallyCenteredModal(props) {
 
@@ -44,7 +45,7 @@ function MyVerticallyCenteredModal(props) {
       centered
     >
 
-      <Modal.Body style={{ backgroundColor: '#121212', borderRadius: '40px' }}>
+      <Modal.Body style={{ backgroundColor: '#121212' }}>
         <div className="container">
           <div className="main_box">
             <div className="first_part">
@@ -56,7 +57,7 @@ function MyVerticallyCenteredModal(props) {
               </div>
             </div>
             <div className="google_button">
-              <button onClick={handleClick}><img src="Images/icons8-google-48.png" /><a id="decorate1" href="#">Sign Up With Google</a></button>
+              <button onClick={handleClick}><img src={GoogleIcon} /><a id="decorate1" href="#">Sign Up With Google</a></button>
             </div>
             <h3><span>or continue with</span></h3>
             <form action>

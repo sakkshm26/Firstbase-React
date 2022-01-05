@@ -7,8 +7,13 @@ body{
     color:white;
    width:100%;
    height: 100%;
-   
 }
+img{
+    width: 30%;
+    margin: 20px;
+}
+
+
 
 .five{
     display: flex;
@@ -109,10 +114,6 @@ body{
     font-size: 13px;
 }
   
-.five .container img{
-    width: 18%;
-    padding-bottom: 10px;
-}
 .five #head{
     display: flex;
 }
@@ -306,11 +307,7 @@ body{
     .five .box4 p{
         font-size: 13px;
     }
-      
-    .five .container img{
-        width: 18%;
-        padding-bottom: 10px;
-    }
+    
     
     .five .button1{
         display: flex;
@@ -475,7 +472,7 @@ body{
     font-size: 12px;
 }
   
-.five .container img{
+.five .container .logo{
     width: 20%;
 }
 
@@ -654,9 +651,7 @@ body{
         font-size: 12px;
     }
       
-    .five .container img{
-        width: 30%;
-    }
+  
     .five .button1 a{
         
         
@@ -833,9 +828,6 @@ body{
         font-size: 12px;
     }
       
-    .five .container img{
-        width: 60%;
-    }
     
     .five .button1 a{
         
@@ -1016,9 +1008,7 @@ body{
         font-size: 12px;
     }
       
-    .five .container img{
-        width: 70%;
-    }
+   
     .five .button1 a{
         
         
@@ -1180,9 +1170,6 @@ body{
         font-size: 12px;
     }
       
-    .five .container img{
-        width: 70%;
-    }
     .five #head{
         display: flex;
     }

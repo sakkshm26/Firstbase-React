@@ -7,7 +7,7 @@ function Five() {
     return (
         <div className='five'>
             <div className="container">
-                <img src={logo} />
+                <img className="logo" src={logo} />
                 <div className="box">
                     <div id="id">
                         <div id="head">

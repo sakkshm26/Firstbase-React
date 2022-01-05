@@ -20,7 +20,10 @@ const Seven = () => {
     return (
         <div className='seven'>
             <div className="container">
-                <img src={logo} />
+                <div className="logo_container">
+                <img src={logo}/>
+                </div>
+               
                 <div class="box">
                     <h4>company details-Delware.llc</h4>
                     <h2>Select an Industry</h2>

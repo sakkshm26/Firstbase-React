@@ -62,7 +62,7 @@ body{
 .third .logo img{
    
    height: 100%;
-   width: 100px;
+     width: 15%;
    display:block;
    margin:auto;
    
@@ -216,7 +216,7 @@ line-height: 18px;
 
 }
 .third .select_main{
-    width: 197px;
+    width: 213px;
     overflow: hidden;
     z-index: 1;
    

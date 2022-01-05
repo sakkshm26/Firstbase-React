@@ -56,13 +56,13 @@ body{
     background-color: black;
 }
 .first .logo{
-    margin-bottom: 20px;
+    margin: 20px;
     
 }
 .first .logo img{
    
    height: 100%;
-   width: 100px;
+   width: 15%;
    display:block;
    margin:auto;
    
