@@ -113,7 +113,7 @@ function Dashboard() {
                                     Pending
                                 </Badge>
                             </div>
-                            <h4 className='mb-2  mt-2'>Bank Account Opening</h4>
+                            <h4 className='mb-2  mt-2'><a href="https://razorpay.com/x/current-accounts/">Bank Account Opening</a></h4>
                             <p>2 to 7 business days on average.</p>
                         </div>
                         <div className='step-4 p-3'>
