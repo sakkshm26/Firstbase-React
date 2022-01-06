@@ -14,7 +14,7 @@ function Thirteen() {
                         <h5>
                             W.LLC
                         </h5>
-                        <p>20%</p>
+                        <p>80%</p>
                     </div>
                     <h2>Percentage of Ownership</h2>
                     <h6>Ownership is usually measured in proportion to capital contributions.</h6>

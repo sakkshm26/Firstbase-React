@@ -104,7 +104,7 @@ function Fourth() {
                 </div>
 
                 <div class="percentage flex">
-                    <p>75%</p>
+                    <p>65%</p>
                 </div>
 
                 <div class="company_heading">

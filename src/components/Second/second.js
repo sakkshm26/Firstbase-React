@@ -81,7 +81,7 @@ function Second() {
                 </div>
 
                 <div className="percentage flex">
-                    <p>25%</p>
+                    <p>10%</p>
                 </div>
 
                 <div className="company_heading">

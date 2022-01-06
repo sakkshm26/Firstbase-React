@@ -14,7 +14,7 @@ function Nine() {
                         <h5>
                             W LLC
                         </h5>
-                        <p>20%</p>
+                        <p>50%</p>
                     </div>
                     <h2>Individual Owner Details</h2>
                     <h6>How many owners and parent companies will own h, LLC?</h6>

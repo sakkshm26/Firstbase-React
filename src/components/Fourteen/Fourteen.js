@@ -15,7 +15,7 @@ function Fourteen() {
             <div className='main-card'>
                 <div className='card-header'>
                     <p>Finish Application · <span className='text-white'>Fanime LLC</span></p>
-                    <p className='text-red'>100%</p>
+                    <p className='text-red'>90%</p>
                 </div>
                 <div className='card-title'>
                     <h2>Review Company Application</h2>

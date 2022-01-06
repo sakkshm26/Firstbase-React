@@ -98,7 +98,7 @@ function Third() {
                 </div>
 
                 <div className="percentage flex">
-                    <p>50%</p>
+                    <p>20%</p>
                 </div>
 
                 <div className="company_heading">
