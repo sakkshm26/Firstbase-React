@@ -302,11 +302,33 @@
     border-radius: 8px;
     height: 150px;
     width: 500px;
+    -webkit-animation: scaledown .1s ease;
+    animation: scaledown .1s ease-out;
+    animation-fill-mode: forwards;
+    transform-origin: 50% 50%;
 }
+
+.vx-card {
+    -webkit-animation: scaledown .1s ease;
+    animation: scaledown .1s ease-out;
+    animation-fill-mode: forwards;
+    transform-origin: 50% 50%;
+
+}
+
+.vx-card:hover {
+    z-index: 100;
+    -webkit-animation: scale .1s ease-out;
+    animation: scale .1s linear;
+    animation-fill-mode: forwards;
+    transform-origin: 50% 50%;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
 
 .dashboard .section h2{
     font-weight: 600;
-    font-size: 40px;
+    font-size: 30px;
 }
 
 .dashboard .section .card-text{

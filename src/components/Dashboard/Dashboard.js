@@ -3,7 +3,7 @@ import './Dashboard.css';
 import logo from '../../assets/firstbase.png';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faPlus, faQuestion, faCog, faAngleDown, faSignOutAlt, faExclamationCircle, faAngleRight } from '@fortawesome/free-solid-svg-icons';
-import { Navbar, Container, Nav, NavDropdown, FormControl, Button, Offcanvas, Row, Col, Form, Card } from 'react-bootstrap';
+import { Navbar, Container, Nav, NavDropdown, FormControl, Button, Offcanvas, Row, Col, Form, Card,Badge } from 'react-bootstrap';
 import { NavLink } from 'react-router-dom';
 
 function Dashboard() {
@@ -94,7 +94,9 @@ function Dashboard() {
                         <div className='step-2'>
                             <div className='step-top'>
                                 <h5>STEP 2</h5>
-                                <p>In Progress</p>
+                                <Badge pill bg="warning" text="dark">
+    Warning
+  </Badge>
                             </div>
                             <h4>Post-formation package</h4>
                             <p>2 to 7 business days on average.</p>
@@ -193,15 +195,18 @@ function Dashboard() {
                             </Form>
                         </Row>
                     </Container>
+                    <div className='vx-card'>
                     <div className='cards'>
+                        
                         <div className='section'>
-                            <h2>Stripe</h2>
+                            <h2>Razorpay</h2>
                             <div className='card-text'>
                                 <h4>Stripe</h4>
                                 <p>The world's most powerful and easy to use APIs</p>
                             </div>
                             <FontAwesomeIcon icon={faAngleRight} />
                         </div>
+                       
                         <div className='section'>
                             <h2>deel.</h2>
                             <div className='card-text'>
@@ -209,6 +214,7 @@ function Dashboard() {
                                 <p>3 months free for contractors and 20% off employees for 1...</p>
                             </div>
                             <FontAwesomeIcon icon={faAngleRight} />
+                        </div>
                         </div>
                     </div>
                 </div>
