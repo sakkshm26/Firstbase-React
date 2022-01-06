@@ -5,10 +5,11 @@ import logo from '../../assets/firstbase.png';
 import { NavLink } from 'react-router-dom';
 import Loading from '../loading';
 
-function First() {
+function First({location}) {
 
     const [loading, setLoading] = useState(true);
     const [data, setData] = useState({});
+    const [id, setId] = useState();
 
     /* const data = [
         { "id": 1, "name": "Private Limited", "description": "This is most suited for startups planning to raise fund" },
@@ -19,10 +20,11 @@ function First() {
 
     const select = (id) => {
         const item = document.getElementsByClassName('selected')[0];
-        if(item!=undefined) {
+        if (item !== undefined) {
             item.classList.remove('selected');
         }
         document.getElementById(`${id}`).classList.add('selected');
+        setId(id);
     }
 
     useEffect(() => {
@@ -32,6 +34,12 @@ function First() {
             // console.log(response.data.com);
             setLoading(false);
         }).catch('Error');
+
+        /* const params = new URLSearchParams(location.search);
+
+        const q = params.get('q');
+        console.log(q); */
+
     }, [])
 
     const ShowCompanies = () => {
@@ -50,7 +58,23 @@ function First() {
 
     const handleSubmit = () => {
         const item = document.getElementsByClassName('selected')[0].firstChild.textContent;
-        localStorage.setItem('CompanyType', '1');
+        localStorage.setItem('CompanyType', id);
+
+        /* async function companyID() {
+            const response = await axios({
+                method: 'post',
+                // url: BASE_URL + 'juser/getinvolved',
+                url: 'https://admin.businesssetup.in/index.php?r=jprimary/fetchcompanydata',
+                data: id,
+            });
+
+            if (!response.ok) {
+                console.log('Error occured in response2');
+            }
+            console.log(response);
+        }
+
+        companyID(); */
     }
 
     return (

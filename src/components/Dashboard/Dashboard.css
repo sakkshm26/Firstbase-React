@@ -142,10 +142,14 @@
     font-size: 21px;
     font-weight: 300;
     margin-bottom: 20px;
+    text-align: inherit;
+    margin: 5px 0 29px 0;
+    border-bottom: none;
 }
 
 .dashboard .main-view span{
-    color: #8d8d93;
+    color: #ffffff;
+    background-color: transparent;
 }
 
 .dashboard .steps{
@@ -255,6 +259,66 @@
     border: none;
     background-color: orangered;
     color: white;
+}
+
+.dashboard .search{
+    width: 4%;
+}
+
+.dashboard .search button{
+    background-color: #252528;
+    border: 2px solid #252528;
+}
+
+.dashboard .input input{
+    background-color: #252528;
+    border: 2px solid #252528;
+}
+
+.dashboard .rewards{
+    margin: 30px 0 5px 8px;
+}
+
+.dashboard .rewards h3{
+    color: white;
+}
+
+.dashboard .rewards p{
+    color: var(--text-light);
+}
+
+.dashboard .cards{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.dashboard .section{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #1f1f1f;
+    margin: 30px 10px;
+    border-radius: 8px;
+    height: 150px;
+    width: 500px;
+}
+
+.dashboard .section h2{
+    font-weight: 600;
+    font-size: 40px;
+}
+
+.dashboard .section .card-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 10px;
+    width: 44%;
+}
+
+.dashboard .section .card-text p{
+    color: var(--text-dark);
 }
 
 @media screen and (max-width: 840px) {
