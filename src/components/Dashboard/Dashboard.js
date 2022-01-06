@@ -93,7 +93,7 @@ function Dashboard() {
                                    Completed
                                 </Badge>
                             </div>
-                            <h4 className='mb-2'>Company Registration</h4>
+                            <h4 className='mb-2  mt-2'>Company Registration</h4>
                             <p>2 to 7 business days on average.</p>
                         </div>
                         <div className='step-2 p-3'>
@@ -103,7 +103,7 @@ function Dashboard() {
                                     In Progress
                                 </Badge>
                             </div>
-                            <h4 className='mb-2'>GST, SHopact, Udhyam, aadhar, Startup India</h4>
+                            <h4 className='mb-2 mt-2'>GST, SHopact, Udhyam, aadhar, Startup India</h4>
                             <p>2 to 7 business days on average.</p>
                         </div>
                         <div className='step-3 p-3'>
@@ -113,8 +113,8 @@ function Dashboard() {
                                     Pending
                                 </Badge>
                             </div>
-                            <h4 className='mb-2'>Bank Account Opening</h4>
-                            <p>20 to 30 business days once SS-4 is signed.</p>
+                            <h4 className='mb-2  mt-2'>Bank Account Opening</h4>
+                            <p>2 to 7 business days on average.</p>
                         </div>
                         <div className='step-4 p-3'>
                             <div className='step-top'>
@@ -123,8 +123,8 @@ function Dashboard() {
                                    In Progress
                                 </Badge>
                             </div>
-                            <h4 className='mb-2'>Post Information Packages</h4>
-                            <p>2 to 7 business days after Tax ID assigned.</p>
+                            <h4 className='mb-2  mt-2'>Post Information Packages</h4>
+                            <p>2 to 7 business days on average.</p>
                         </div>
                     </div>
                     {/* <div className='warning'>
@@ -134,9 +134,9 @@ function Dashboard() {
                     <div className='company-details mt-4'>
                         <div className='box p-3'>
                             <h4>Compliances</h4>
-                            <p>Annual compliance package starts at Rs 20000/annum</p>
+                            <p>Annual compliance package starts at Rs 20000/annum<br></br><br></br></p>
                             <div className='task'>
-                                <p>Start Package</p>
+                                <p>Check Package</p>
                                 <FontAwesomeIcon icon={faAngleRight} />
                             </div>
                         </div>
