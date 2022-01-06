@@ -15,7 +15,7 @@ function Five() {
                             <h5>
                                 Delware.llc
                             </h5>
-                            <p>20%</p>
+                            <p>30%</p>
                         </div>
                         <h2>Choose a Company name</h2>
                         <h6>We'll check with the State of Delaware to see if your name is available.</h6>
