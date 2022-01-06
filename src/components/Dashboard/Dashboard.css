@@ -37,6 +37,10 @@
     margin: 16px;
 } 
 
+.dashboard .top .logo img{
+    margin: 16px;
+} 
+
 .dashboard .nav-links ul{
     padding: 20px 0 0 15px;
     font-size: 15px;
@@ -222,15 +226,14 @@
     justify-content: center;
     background-color: rgba(255,255,255,.08);
     margin: 10px 10px 10px 7px;
-    padding: 0 10px;
-    width: 22%;
+    width: 23%;
     border-radius: 8px;
 }
 
 .dashboard .company-details .box h4{
     font-weight: lighter;
     font-size: 15px;
-    margin-top: 20px;
+    margin-top: 5px;
     margin-bottom: 15px;
 }
 
@@ -267,12 +270,12 @@
 
 .dashboard .search button{
     background-color: #252528;
-    border: 2px solid #252528;
+    border: 3px solid #252528;
 }
 
 .dashboard .input input{
     background-color: #252528;
-    border: 2px solid #252528;
+    border: 3px solid #252528;
 }
 
 .dashboard .rewards{
